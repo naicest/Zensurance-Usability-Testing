@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Zensurance | Policy Update Checkout</title>
+</head>
+<body>
+    <header class="header--main">
+            <div class="top-bar--loaded"></div>
+            <container class="container--header">
+                <h2 class="h2--light">
+                    Policy Update Checkout
+                </h3>
+                <div class="container--logo">
+                    <img src="./images/zensurance-logo.svg" alt="Zensurance" class="logo--text">
+                </div>
+            </container>
+
+    </header>
+
+    <container class="container--main-content">
+        <container class="container--checkout-steps content-card">
+            <container class="card-head">
+                <img src="./images/portrait-placeholder.png" alt="broker portrait" class="broker-portrait">
+                <div class="broker-head">
+                    <p class="broker-info-text body--medium-bold text--center-align">Arturo Martinez</p>
+                    <p class="broker-info-text body--medium-regular text--center-align">Your Insurance Broker</p>
+                </div>
+            </container>
+            <p class="body--medium-regular text--center-align">Hi John, follow these <span class="body--medium-bold">3 easy steps</span> to complete your policy update.</p>
+            <container class="container--checkout-step-items">
+                <div class="numbered-steps body--small-regular">
+                    <div class="format--row">
+                        <p class="body--small-regular format--circle">1</p>
+                        <p class="body--small-regular">Review your policy changes, effective date, and price change summary</p>
+                    </div>
+                    <div class="container--steps-rectangle">
+                        <div class="steps-rectangle"></div>
+                    </div>
+                    <div class="format--row">
+                        <p class="body--small-regular format--circle">2</p>
+                        <p class="body--small-regular">E-sign policy update document</p>
+                    </div>
+                    <div class="container--steps-rectangle">
+                        <div class="steps-rectangle"></div>
+                    </div>
+                    <div class="format--row">
+                        <p class="body--small-regular format--circle">3</p>
+                        <p class="body--small-regular">Pay using our fully secure checkout process</p>
+                    </div>
+                    <div class="container--steps-rectangle">
+                        <div class="steps-rectangle"></div>
+                    </div>
+                    <div class="format--row">
+                        <p class="body--small-regular format--circle">4</p>
+                        <p class="body--small-regular">Your updated policy documents will be issued in 2-4 business days</p>
+                    </div>
+                </div>
+            </container>
+        </container>
+
+        <container class="container--review-endorsement content-card">
+            <container class="card-head">
+                <img src="./images/celebrate-graphic.svg" alt="party popper" class="graphic--celebrate padding--bottom-16">
+                <h1 class="h1--bold text--center-align format--remove-margin">Hi John, your policy update is ready!</h1>
+                <p class= "body--medium-regular text--center-align format--remove-margin">Review your request details below before proceeding</p>
+            </container>
+            
+            <container class="container--review-endorsement--items">
+                <container class="container--input">
+                    <label for="changes-requested" class="input-label body--medium-regular">Changes Requested</label>
+                    <input type="text" disabled="disabled" name="changes-requested" class="text-input text-input--read-only body--medium-regular" placeholder="Increase your General Liability limit from $2 million to $3 million.">
+                </container>
+                <container class="container--input">
+                    <label for="effective-date" class="input-label body--medium-regular">Change Effective Date</label>
+                    <input type="text" disabled="disabled" name="effective-date" class="text-input text-input--read-only body--medium-regular" placeholder="March 23, 2022">
+                </container>
+                <container class="container--input">
+                    <label for="correct-info" class="input-label body--medium-regular">Is the above information correct?</label>
+                    <container class="button-group">
+                        <button class="button button--tertiary body--medium-bold" name="correct-info">Yes</button>
+                        <div class="divider"></div>
+                        <button class="button button--tertiary body--medium-bold" name="correct-info">No</button>
+    
+                </container>    
+            </container>
+
+        </container>
+
+    </container>
+
+</body>
+</html>
