@@ -37,6 +37,10 @@ body {
     padding: 0;
 }
 
+
+
+/* Fonts */
+
 .h1--bold {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -69,13 +73,9 @@ body {
     text-align: center;
 }
 
-.header--main {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    background-color: var(--grey-100);
-}
+
+
+/* Containers */
 
 .container--header {
     display: flex;
@@ -88,10 +88,55 @@ body {
     align-items: center;
 }
 
-.logo--text {
-    display: inline-block;
-    height: 32px;
+.container--main-content {
+    display: flex;
+    margin: 10% 4% 20%;
+    gap: 32px;
 }
+
+.container--checkout-steps {
+    width: 25%;
+    gap: 24px;
+}
+
+.container--review-endorsement {
+    gap: 56px;
+}
+
+.container--review-endorsement--items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 32px;
+}
+
+.container--steps-rectangle {
+    display: flex;
+    padding-left: 18px;
+}
+
+.container--input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+}
+
+.container--right-column {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    height: fit-content;
+}
+
+
+
+/* Headers */
 
 .top-bar--loaded {
     width: 100%;
@@ -99,30 +144,53 @@ body {
     background-color: var(--green-600);
 }
 
-.container--main-content {
-    display: flex;
-    margin: 10% 4% 20%;
-    gap: 32px;
+.header--main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    background-color: var(--grey-100);
 }
 
-.content-card {
+.header--broker {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    height: auto;
-    padding: 40px;
-    border-radius: 6px;
-    background-color: var(--grey-100);
-    box-shadow: 0px 4px 8px #b8c2cc66;
+    gap: 4px;
 }
 
-.card-head {
+.header--card-center {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
+}
+
+.header--card-left {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+
+
+/* Formatting */
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 40px;
+    border-radius: 6px;
+    background-color: var(--grey-100);
+    box-shadow: 0px 4px 8px #b8c2cc66;
 }
 
 .format--remove-margin {
@@ -147,79 +215,13 @@ body {
     border-radius: 50px;
 }
 
-.container--checkout-steps {
-    width: 25%;
-    gap: 24px;
-}
-
-.container--review-endorsement {
-    width: 75%;
-    gap: 56px;
-    height: fit-content;
-}
-
 .padding--bottom-16 {
     padding-bottom: 16px;
 }
 
-.broker-portrait {
-    min-width: 78px;
-    height: 78px;
-    border-radius: 50px;
-    margin-bottom: 8px;
-}
 
-.broker-info-text {
-    margin: 0;
-}
 
-.broker-head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-}
-
-.container--review-endorsement--items {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    gap: 32px;
-}
-
-.container--steps-rectangle {
-    display: flex;
-    padding-left: 18px;
-}
-
-.steps-rectangle {
-    width: 2px;
-    height: 40px;
-    background-color: var(--grey-300);
-    border-radius: 4px;
-}
-
-.container--input {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    gap: 16px;
-}
-
-.text-input {
-    height: 58px;
-    width: 100%;
-    padding: 24px 16px 24px 16px;
-    background-color: var(--grey-100);
-    border-radius: 4px;
-    border: 1px solid var(--grey-300);
-    box-shadow: 0px 3px 6px #b8c2cc33;
-}
-
+/* Buttons */
 
 .button-group {
     display: flex;
@@ -237,12 +239,6 @@ body {
     border: none;
 }
 
-.divider {
-    background-color: var(--grey-400);
-    width: 1px;
-    height: 72px;
-}
-
 .button:hover {
     background-color: var(--green-300);
 }
@@ -252,3 +248,50 @@ body {
     color: var(--grey-100);
 
 }
+
+
+/* Text Inputs */
+
+.text-input {
+    height: 58px;
+    width: 100%;
+    padding: 24px 16px 24px 16px;
+    background-color: var(--grey-100);
+    border-radius: 4px;
+    border: 1px solid var(--grey-300);
+    box-shadow: 0px 3px 6px #b8c2cc33;
+}
+
+
+/* To be organized */
+
+.logo--text {
+    display: inline-block;
+    height: 32px;
+}
+
+.broker-portrait {
+    min-width: 78px;
+    height: 78px;
+    border-radius: 50px;
+    margin-bottom: 8px;
+}
+
+.broker-info-text {
+    margin: 0;
+}
+
+.steps-rectangle {
+    width: 2px;
+    height: 40px;
+    background-color: var(--grey-300);
+    border-radius: 4px;
+}
+
+.divider {
+    background-color: var(--grey-400);
+    width: 1px;
+    height: 72px;
+}
+
+
