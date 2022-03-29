@@ -44,29 +44,30 @@ body {
 .h1--bold {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .h2--light {
     font-family: 'Montserrat', sans-serif;
+    color: var(--grey-700);
     font-weight: 400;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .body--small-regular {
     color: var(--grey-700);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .body--medium-regular {
     color: var(--grey-700);
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .body--medium-bold {
     color: var(--grey-700);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .text--center-align {
@@ -80,7 +81,7 @@ body {
 .container--header {
     display: flex;
     justify-content: space-between;
-    margin: 40px 80px 20px;
+    margin: 24px 80px 20px;
 }
 
 .container--logo {
@@ -276,7 +277,7 @@ body {
 
 .logo--text {
     display: inline-block;
-    height: 32px;
+    height: 24px;
 }
 
 .broker-portrait {
