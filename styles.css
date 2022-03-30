@@ -130,7 +130,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    gap: 16px;
+    gap: 8px;
 }
 
 .container--right-column {
@@ -172,7 +172,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 16px;
+    gap: 8px;
 }
 
 .header--card-left {
