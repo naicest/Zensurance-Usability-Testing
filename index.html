@@ -27,7 +27,7 @@
 
     </header>
 
-    <container class="container--main-content">
+    <container class="container--main-content-columns">
         <container class="content-card format--gap-24 format--width-25percent">
             <container class="header--card-center">
                 <img src="./images/portrait-placeholder.png" alt="broker portrait" class="broker-portrait">
@@ -68,7 +68,7 @@
             </container>
         </container>
 
-        <container class="container--right-column">
+        <container class="container--card-column format--width-75percent">
             <container class="content-card format--gap-48">
                 <container class="header--card-center">
                     <img src="./images/celebrate-graphic.svg" alt="party popper" class="graphic--celebrate padding--bottom-16">
@@ -90,7 +90,7 @@
                     <container class="container--input">
                         <label for="correct-info" class="input-label body--medium-regular">Is the above information correct?</label>
                         <container class="button-group">
-                            <button id="reviewEndorsementYes" onclick="buttonClick()" class="button button--tertiary body--medium-bold" name="correct-info">Yes</button>
+                            <button id="reviewEndorsementYes" onclick="endorsementInfoCorrect()" class="button button--tertiary body--medium-bold" name="correct-info">Yes</button>
                             <div class="divider--vertical"></div>
                             <button id="reviewEndorsementNo" class="button button--tertiary body--medium-bold" name="correct-info">No</button>
                         </container>
@@ -104,17 +104,17 @@
                     <p class= "body--medium-regular format--remove-margin">Your limit increase means an increase to your premium. Today you will pay only the prorated amount, which allows us to update your policy for the remainder of your term.</p>
                 </container>
                 <container class="container--card-items">
-                    <container class="container--price-row format--width-100percent">
+                    <container class="container--price-row padding--left-right-16 format--width-100percent">
                         <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">OLD ANNUAL PREMIUM</p>      
                         <p class="body--medium-semibold font-family--montserrat format--remove-margin">$600</p>  
                     </container>
-                    <container class="container--price-row format--width-100percent">
+                    <container class="container--price-row padding--left-right-16 format--width-100percent">
                         <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">NEW ANNUAL PREMIUM</p>      
                         <p class="body--medium-semibold font-family--montserrat format--remove-margin">$712</p>  
                     </container>
-                    <container class="container--price-row container--price-row-highlighted format--width-100percent">
+                    <container class="container--price-row container--price-row-highlighted padding--left-right-16 format--width-100percent">
                         <p class="body--medium-semibold color--grey-800 font-family--montserrat format--remove-margin">PRORATED AMOUNT (ONE-TIME PAYMENT)</p>      
-                        <p class="h2--regular format--remove-margin color--grey-800"><span class="body--small-regular color--grey-800">$</span> 41<span class="body--small-regular color--grey-800">.00</span></p>  
+                        <p class="h2--regular format--remove-margin color--grey-800"><span class="body--small-regular color--grey-800">$</span> 41<span class="body--small-light color--grey-800" style="width:56px;"> + tax & fees</span></p>  
                     </container>
                 </container>
             </container>
@@ -124,7 +124,7 @@
     </container>
 
     <footer id="bottomBar" class="footer--main" style="display: none;">
-        <button id="reviewEndorsementNext" href="./esign.html" class="button button--primary body--medium-bold">Next</button>
+        <button id="reviewEndorsementNext" onclick="window.location='./esign.html'" class="button button--primary body--medium-bold">Next</button>
     </footer>
 
 </body>

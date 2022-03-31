@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Zensurance | Policy Update Checkout</title>
+</head>
+
+<body>
+    <header class="header--main">
+            <div class="top-bar--loaded"></div>
+            <container class="container--header">
+                <h2 class="h2--light">
+                    Policy Update Checkout
+                </h3>
+                <div class="container--logo">
+                    <img src="./images/zensurance-logo.svg" alt="Zensurance" class="logo--text">
+                </div>
+            </container>
+    </header>
+
+    <container class="container--main-content-columns">
+
+
+        <container class="container--card-column format--width-60percent">
+            <container id="paymentSummary" class="content-card format--gap-48">
+                <container class="header--card-left">
+                    <h1 class="h1--bold format--remove-margin">Payment Summary</h1>
+                </container>
+                <container class="container--card-items">
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">PRORATED AMOUNT</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$41</p>  
+                    </container>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">TAXES</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$2</p>  
+                    </container>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">FEES</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$0</p>  
+                    </container>
+                    <div class="divider--horizontal"></div>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">TOTAL</p>      
+                        <p class="h2--regular format--remove-margin color--grey-800"><span class="body--small-regular color--grey-800">$</span> 43<span class="body--small-regular color--grey-800">.00</span></p>  
+                    </container>
+                </container>
+            </container>
+            <container class="content-card format--gap-48">
+                <container class="header--card-left">
+                    <h1 class="h1--bold format--remove-margin">Payment Details</h1>
+                    <p class= "body--medium-regular format--remove-margin">Today you are paying <span style="font-weight: 700; display:inline-block">only the prorated amount</span> for your policy change, which allows us to update your policy for the remainder of this year.</p>
+                </container>
+                
+                <container class="container--card-items">
+                    <container class="container--input">
+                        <label id="ccNumber" for="cc-number" class="input-label body--medium-regular">Credit Card Number</label>
+                        <input type="text" name="cc-number" maxlength="16" class="text-input body--medium-regular" placeholder="**** **** **** 1234">
+                    </container>
+                    <container class="container--input-group">
+                        <container class="container--input">
+                            <label for="expiry-date" class="input-label body--medium-regular">Expiry Date</label>
+                            <input type="text" name="expiry-date" maxlength="4" class="text-input body--medium-regular" placeholder="MM/YY">
+                        </container>
+                        <container class="container--input">
+                            <label for="cvc" class="input-label body--medium-regular">CVC</label>
+                            <input type="text" name="cvc" maxlength="3" class="text-input body--medium-regular" placeholder="123">
+                        </container>
+                    </container>
+                </container>
+                <button id="reviewEndorsementYes" onclick="window.location='./success.html'" class="button button--primary body--medium-bold format--width-100percent" name="complete-payment">Complete your payment</button>
+            </container>
+        </container>
+
+        <container class="container--card-column format--width-25percent">
+            <container class="header--card-left">
+                <h1 class="h1--bold format--remove-margin">Your Policy</h1>
+                <p class="body--medium-regular format--remove-margin">Your <span class="body--medium-bold">General Liability</span> limit increase will be effective starting on <span class="body--medium-bold">March 23, 2022</span>.</p>
+            </container>
+            <container id="policySummary" class="content-card format--gap-48">
+                <container class="container--card-items">
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">LIABILITY</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$3,000,000</p>  
+                    </container>
+                    <div class="divider--horizontal"></div>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">BUSINESS INTERRUPTION</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">Include</p>  
+                    </container>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">CONTENTS & EQUIPMENT</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$1,000</p>  
+                    </container>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">FLOOD</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">Include</p>  
+                    </container>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">PORTABLE ELECTRONICS</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$2,500</p>  
+                    </container>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">STOCK / INVENTORY</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$5,000</p>  
+                    </container>
+                    <div class="divider--horizontal"></div>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">CYBER LIABILITY</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$250,000</p>  
+                    </container>
+                </container>
+            </container>
+        </container>
+    </container>
+    
+</body> 

@@ -1,14 +1,11 @@
-function buttonClick() {
+function endorsementInfoCorrect() {
   var x = document.getElementById("priceChangeSummary");
   if (x.style.display === "none") {
     x.style.display = "flex";
-  } else {
-    x.style.display = "none";
   }
   var y = document.getElementById("bottomBar");
   if (y.style.display === "none") {
     y.style.display = "flex";
-  } else {
-    y.style.display = "none";
   }
+  window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
 }
