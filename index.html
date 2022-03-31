@@ -28,7 +28,7 @@
     </header>
 
     <container class="container--main-content">
-        <container class="container--checkout-steps content-card">
+        <container class="content-card format--gap-24 format--width-25percent">
             <container class="header--card-center">
                 <img src="./images/portrait-placeholder.png" alt="broker portrait" class="broker-portrait">
                 <div class="header--broker">
@@ -69,14 +69,14 @@
         </container>
 
         <container class="container--right-column">
-            <container class="container--review-endorsement content-card">
+            <container class="content-card format--gap-48">
                 <container class="header--card-center">
                     <img src="./images/celebrate-graphic.svg" alt="party popper" class="graphic--celebrate padding--bottom-16">
                     <h1 class="h1--bold text--center-align format--remove-margin">Hi John, your policy update is ready!</h1>
                     <p class= "body--medium-regular text--center-align format--remove-margin">Review your request details below before proceeding</p>
                 </container>
                 
-                <container class="container--review-endorsement--items">
+                <container class="container--card-items">
                     <container class="container--input">
                         <label for="changes-requested" class="input-label body--medium-regular">Changes Requested</label>
                         <input type="text" disabled="disabled" name="changes-requested" class="text-input text-input--read-only body--medium-regular" placeholder="Increase your General Liability limit from $2 million to $3 million.">
@@ -91,17 +91,31 @@
                         <label for="correct-info" class="input-label body--medium-regular">Is the above information correct?</label>
                         <container class="button-group">
                             <button id="reviewEndorsementYes" onclick="buttonClick()" class="button button--tertiary body--medium-bold" name="correct-info">Yes</button>
-                            <div class="divider"></div>
+                            <div class="divider--vertical"></div>
                             <button id="reviewEndorsementNo" class="button button--tertiary body--medium-bold" name="correct-info">No</button>
                         </container>
                     </container>    
                 </container>
             </container>
         
-            <container id="priceChangeSummary" class="container--price-change-summary content-card" style="display: none;">
+            <container id="priceChangeSummary" class="content-card format--gap-48" style="display: none;">
                 <container class="header--card-left">
                     <h1 class="h1--bold format--remove-margin">Price Change Summary</h1>
                     <p class= "body--medium-regular format--remove-margin">Your limit increase means an increase to your premium. Today you will pay only the prorated amount, which allows us to update your policy for the remainder of your term.</p>
+                </container>
+                <container class="container--card-items">
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">OLD ANNUAL PREMIUM</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$600</p>  
+                    </container>
+                    <container class="container--price-row format--width-100percent">
+                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">NEW ANNUAL PREMIUM</p>      
+                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$712</p>  
+                    </container>
+                    <container class="container--price-row container--price-row-highlighted format--width-100percent">
+                        <p class="body--medium-semibold color--grey-800 font-family--montserrat format--remove-margin">PRORATED AMOUNT (ONE-TIME PAYMENT)</p>      
+                        <p class="h2--regular format--remove-margin color--grey-800"><span class="body--small-regular color--grey-800">$</span> 41<span class="body--small-regular color--grey-800">.00</span></p>  
+                    </container>
                 </container>
             </container>
 
