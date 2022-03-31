@@ -5,10 +5,10 @@ function buttonClick() {
   } else {
     x.style.display = "none";
   }
-  var x = document.getElementById("bottomBar");
-  if (x.style.display === "none") {
-    x.style.display = "flex";
+  var y = document.getElementById("bottomBar");
+  if (y.style.display === "none") {
+    y.style.display = "flex";
   } else {
-    x.style.display = "none";
+    y.style.display = "none";
   }
 }
