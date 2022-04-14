@@ -17,20 +17,24 @@
 <body>
     <header class="header--main">
             <div class="top-bar--loaded"></div>
-            <container class="container--header">
-                <h2 class="h2--light">
-                    Policy Update Checkout
-                </h3>
-                <div class="container--logo">
-                    <img src="./images/zensurance-logo.svg" alt="Zensurance" class="logo--text">
-                </div>
+            <container class="header--main-split">
+                <container class="container--header-split-left">
+                    <h2 class="h2--light">
+                        Policy Update Checkout
+                    </h2>
+                </container>
+                <container class="container--header-split-right">
+                    <div class="container--logo">
+                        <img src="./images/zensurance-logo.svg" alt="Zensurance" class="logo--text">
+                    </div>
+                </container>
             </container>
     </header>
 
-    <container class="container--main-content-columns">
+    <container class="container--main-content-columns-split">
 
 
-        <container class="container--card-column format--width-60percent">
+        <container class="container--card-column-left format--width-60percent">
             <container id="paymentSummary" class="content-card format--gap-48">
                 <container class="header--card-left">
                     <h1 class="h1--bold format--remove-margin">Payment Summary</h1>
@@ -81,46 +85,76 @@
             </container>
         </container>
 
-        <container class="container--card-column format--width-25percent">
-            <container class="header--card-left">
-                <h1 class="h1--bold format--remove-margin">Your Policy</h1>
-                <p class="body--medium-regular format--remove-margin">Your <span class="body--medium-bold">General Liability</span> limit increase will be effective starting on <span class="body--medium-bold">March 23, 2022</span>.</p>
-            </container>
-            <container id="policySummary" class="content-card format--gap-48">
-                <container class="container--card-items">
-                    <container class="container--price-row format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">LIABILITY</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$3,000,000</p>  
-                    </container>
-                    <div class="divider--horizontal"></div>
-                    <container class="container--price-row format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">BUSINESS INTERRUPTION</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">Include</p>  
-                    </container>
-                    <container class="container--price-row format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">CONTENTS & EQUIPMENT</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$1,000</p>  
-                    </container>
-                    <container class="container--price-row format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">FLOOD</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">Include</p>  
-                    </container>
-                    <container class="container--price-row format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">PORTABLE ELECTRONICS</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$2,500</p>  
-                    </container>
-                    <container class="container--price-row format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">STOCK / INVENTORY</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$5,000</p>  
-                    </container>
-                    <div class="divider--horizontal"></div>
-                    <container class="container--price-row format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">CYBER LIABILITY</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$250,000</p>  
+        <container class="container--policy-summary-grey">
+            <container class="container--card-column-right">
+                <container class="header--card-left">
+                    <h1 class="h1--bold format--remove-margin">Your Policy</h1>
+                    <p class="body--medium-regular format--remove-margin">Your <span class="body--medium-bold">General Liability</span> limit increase will be effective starting on <span class="body--medium-bold">March 23, 2022</span>.</p>
+                </container>
+                <container id="policySummary" class="content-card format--gap-48">
+                    <container class="container--card-items">
+                        <div class="coverage--item">
+                            <div class="coverage-header--title">
+                                <div class="coverage-header--title-left">
+                                    <img src="./images/shield-icon.svg" alt="shield icon" class="svg-icon-24"> 
+                                    <h3 class="format--remove-margin">General Liability</h3>
+                                </div>
+                                <div class="pill--green"><p class="format--remove-margin">Updated</p></div>
+                            </div>
+                            <container class="container--price-row format--width-100percent">
+                                <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">LIABILITY</p>      
+                                <p class="body--medium-semibold font-family--montserrat format--remove-margin">$3,000,000</p>  
+                            </container>    
+                        </div>
+                        <div class="divider--horizontal"></div>
+                        <div class="coverage--item">
+                            <div class="coverage-header--title">
+                                <div class="coverage-header--title-left">
+                                    <img src="./images/shield-icon.svg" alt="shield icon" class="svg-icon-24"> 
+                                    <h3 class="format--remove-margin">Property</h3>
+                                </div>
+                            </div>
+                            <container class="container--price-row format--width-100percent">
+                                <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">BUSINESS INTERRUPTION</p>      
+                                <p class="body--medium-semibold font-family--montserrat format--remove-margin">Include</p>  
+                            </container>
+                            <container class="container--price-row format--width-100percent">
+                                <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">CONTENTS & EQUIPMENT</p>      
+                                <p class="body--medium-semibold font-family--montserrat format--remove-margin">$1,000</p>  
+                            </container>
+                            <container class="container--price-row format--width-100percent">
+                                <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">FLOOD</p>      
+                                <p class="body--medium-semibold font-family--montserrat format--remove-margin">Include</p>  
+                            </container>
+                            <container class="container--price-row format--width-100percent">
+                                <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">PORTABLE ELECTRONICS</p>      
+                                <p class="body--medium-semibold font-family--montserrat format--remove-margin">$2,500</p>  
+                            </container>
+                            <container class="container--price-row format--width-100percent">
+                                <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">STOCK / INVENTORY</p>      
+                                <p class="body--medium-semibold font-family--montserrat format--remove-margin">$5,000</p>  
+                            </container>
+                        </div>
+                        <div class="divider--horizontal"></div>
+                        <div class="coverage--item">
+                            <div class="coverage-header--title">
+                                <div class="coverage-header--title-left">
+                                    <img src="./images/shield-icon.svg" alt="shield icon" class="svg-icon-24"> 
+                                    <h3 class="format--remove-margin">Cyber Security</h3>
+                                </div>
+                            </div>
+                            <container class="container--price-row format--width-100percent">
+                                <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">CYBER LIABILITY</p>      
+                                <p class="body--medium-semibold font-family--montserrat format--remove-margin">$250,000</p>  
+                            </container>
+                        </div>
+
+
                     </container>
                 </container>
             </container>
         </container>
+        
     </container>
     
 </body> 

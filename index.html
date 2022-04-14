@@ -19,7 +19,7 @@
             <container class="container--header">
                 <h2 class="h2--light">
                     Policy Update Checkout
-                </h3>
+                </h2>
                 <div class="container--logo">
                     <img src="./images/zensurance-logo.svg" alt="Zensurance" class="logo--text">
                 </div>
@@ -92,7 +92,7 @@
                         <container class="button-group">
                             <button id="reviewEndorsementYes" onclick="endorsementInfoCorrect()" class="button button--tertiary body--medium-bold" name="correct-info">Yes</button>
                             <div class="divider--vertical"></div>
-                            <button id="reviewEndorsementNo" class="button button--tertiary body--medium-bold" name="correct-info">No</button>
+                            <button id="reviewEndorsementNo" onclick="endorsementInfoIncorrect()" class="button button--tertiary body--medium-bold" name="correct-info">No</button>
                         </container>
                     </container>    
                 </container>
@@ -120,6 +120,23 @@
             </container>
         </container>
         
+        <div id="contactBrokerModal" class="modal">
+            <div class="modal-container">
+                <container class="modal-header padding--24">
+                    <span class="close-modal">&times;</span>
+                    <p class="body--medium-bold color--grey-800">Something need fixing?</p>    
+                </container>
+                <div class="divider--horizontal"></div>
+                <container class="modal-content">
+                    <p class="body--medium-regular color--grey-600">Need to change something on this page? No problem! Include a short message to your broker and they will reach out to you shortly.</p>
+                    <textarea name="endorsement-broker-message" class="body--medium-regular" rows="4" cols="50" placeholder="Enter message here..."></textarea>
+                </container>
+                <container class="modal-footer">
+                    <button class="button button--tertiary button--small">Cancel</button>
+                    <button class="button button--primary button--small">Send message</button>
+                </container>
+            </div>
+        </div>
 
     </container>
 

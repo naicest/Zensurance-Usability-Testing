@@ -14,22 +14,26 @@
     <title>Zensurance | Policy Update Checkout</title>
 </head>
 
-<body>
-    <header class="header--main">
-            <div class="top-bar--loaded"></div>
+<body class="bg-color--grey-300">
+    <header class="header--esign">
             <container class="container--header">
-                <h2 class="h2--light">
-                    Policy Update Checkout
-                </h3>
                 <div class="container--logo">
-                    <img src="./images/zensurance-logo.svg" alt="Zensurance" class="logo--text">
+                    <img src="./images/zensurance-logo-icon.svg" alt="Zensurance" class="logo--icon">
                 </div>
+                <p class="body--medium-regular text--center-align color--grey-300">E-sign document placeholder. This is not legally binding. This is a mock signature request and has no legal value.</p>
+
+                <container class="container--hellosign">
+                    <button id="esignNext" onclick="window.location='./payment.html'" class="button--hellosign">Get Started</button>
+                    <div class="hellosign-stamp">
+                        <p class="text--hellosign color--grey-400 format--remove-margin font-family--montserrat">POWERED BY</p>
+                        <img src="./images/hellosign-logo.svg" alt="hellosign" class="logo--hellosign">
+                    </div>
+                </container>
             </container>
     </header>
-    <container class="content-card container--main-content">
-        <div class="placeholder-text text--center-align format--width-100percent">Esign document placeholder</div>
-    </container>
-    <footer id="bottomBar" class="footer--main">
-        <button id="esignNext" onclick="window.location='./payment.html'" class="button button--primary body--medium-bold">Next</button>
-    </footer>
+
+    <container class="header--card-center">
+        <img src="./images/esign_placeholder.png" alt="esign-placeholder" class="format--width-60percent esign-placeholder padding--esign">
+        </container>    
+
 </body> 
