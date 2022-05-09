@@ -1,148 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Usability Test Menu</title>
+    <link rel="stylesheet" href="./reading_speed_Q2_2022/styles.css">
 
-    <title>Zensurance | Policy Update Checkout</title>
 </head>
+
 <body>
-    <header class="header--main">
-            <div class="top-bar--loaded"></div>
-            <container class="container--header">
-                <h2 class="h2--light">
-                    Policy Update Checkout
-                </h2>
-                <div class="container--logo">
-                    <img src="./images/zensurance-logo.svg" alt="Zensurance" class="logo--text">
-                </div>
-            </container>
+    <div class="format--flex-column">
+        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Zensurance UX Research Tools | Q2 2022</h3>
+        <button onclick="window.location='./endorsement_checkout_Q2_2022/summary.html'" class="button" style="width: fit-content; padding: 8px 24px 8px 24px">Endorsement Checkout Usability Test</button>
+        <button onclick="window.location='./reading_speed_Q2_2022/start.html'" class="button">Reading Speed Test</button>
 
-    </header>
-
-    <container class="container--main-content-columns">
-        <container class="content-card format--gap-24 format--width-25percent">
-            <container class="header--card-center">
-                <img src="./images/portrait-placeholder.png" alt="broker portrait" class="broker-portrait">
-                <div class="header--broker">
-                    <p class="broker-info-text body--medium-bold text--center-align">Arturo Martinez</p>
-                    <p class="broker-info-text body--medium-regular text--center-align">Your Insurance Broker</p>
-                </div>
-            </container>
-            <p class="body--medium-regular text--center-align">Follow these <span class="body--medium-bold">3 easy steps</span> to complete your policy update.</p>
-            <container class="container--checkout-step-items">
-                <div class="numbered-steps body--small-regular">
-                    <div class="format--row">
-                        <p class="body--small-regular format--circle">1</p>
-                        <p class="body--small-regular">Review your policy changes, effective date, and price change summary</p>
-                    </div>
-                    <div class="container--steps-rectangle">
-                        <div class="steps-rectangle"></div>
-                    </div>
-                    <div class="format--row">
-                        <p class="body--small-regular format--circle">2</p>
-                        <p class="body--small-regular">E-sign policy update document</p>
-                    </div>
-                    <div class="container--steps-rectangle">
-                        <div class="steps-rectangle"></div>
-                    </div>
-                    <div class="format--row">
-                        <p class="body--small-regular format--circle">3</p>
-                        <p class="body--small-regular">Pay using our fully secure checkout process</p>
-                    </div>
-                    <div class="container--steps-rectangle">
-                        <div class="steps-rectangle"></div>
-                    </div>
-                    <div class="format--row">
-                        <p class="body--small-regular format--circle">4</p>
-                        <p class="body--small-regular">Your updated policy documents will be issued in 2-4 business days</p>
-                    </div>
-                </div>
-            </container>
-        </container>
-
-        <container class="container--card-column format--width-75percent">
-            <container class="content-card format--gap-48">
-                <container class="header--card-center">
-                    <img src="./images/celebrate-graphic.svg" alt="party popper" class="graphic--celebrate padding--bottom-16">
-                    <h1 class="h1--bold text--center-align format--remove-margin">Hi John, your policy update is ready!</h1>
-                    <p class= "body--medium-regular text--center-align format--remove-margin">Review your request details below before proceeding</p>
-                </container>
-                
-                <container class="container--card-items">
-                    <container class="container--input">
-                        <label for="changes-requested" class="input-label body--medium-regular">Changes Requested</label>
-                        <input type="text" disabled="disabled" name="changes-requested" class="text-input text-input--read-only body--medium-regular" placeholder="Increase your General Liability limit from $2 million to $3 million.">
-                    </container>
-    
-                    <container class="container--input">
-                        <label for="effective-date" class="input-label body--medium-regular">Change Effective Date</label>
-                        <input type="text" disabled="disabled" name="effective-date" class="text-input text-input--read-only body--medium-regular" placeholder="June 1, 2022">
-                    </container>
-    
-                    <container class="container--input">
-                        <label for="correct-info" class="input-label body--medium-regular">Is the above information correct?</label>
-                        <container class="button-group">
-                            <button id="reviewEndorsementYes" onclick="endorsementInfoCorrect()" class="button button--tertiary body--medium-bold" name="correct-info">Yes</button>
-                            <div class="divider--vertical"></div>
-                            <button id="reviewEndorsementNo" onclick="endorsementInfoIncorrect()" class="button button--tertiary body--medium-bold" name="correct-info">No</button>
-                        </container>
-                    </container>    
-                </container>
-            </container>
-        
-            <container id="priceChangeSummary" class="content-card format--gap-48" style="display: none;">
-                <container class="header--card-left">
-                    <h1 class="h1--bold format--remove-margin">Price Change Summary</h1>
-                    <p class= "body--medium-regular format--remove-margin">Your limit increase means an increase to your premium. Today you will pay only the prorated amount, which allows us to update your policy for the remainder of your term.</p>
-                </container>
-                <container class="container--card-items">
-                    <container class="container--price-row padding--left-right-16 format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">OLD ANNUAL PREMIUM</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$600</p>  
-                    </container>
-                    <container class="container--price-row padding--left-right-16 format--width-100percent">
-                        <p class="body--medium-semibold color--grey-600 font-family--montserrat format--remove-margin">NEW ANNUAL PREMIUM</p>      
-                        <p class="body--medium-semibold font-family--montserrat format--remove-margin">$712</p>  
-                    </container>
-                    <container class="container--price-row container--price-row-highlighted padding--left-right-16 format--width-100percent">
-                        <p class="body--medium-semibold color--grey-800 font-family--montserrat format--remove-margin">PRORATED AMOUNT (ONE-TIME PAYMENT)</p>      
-                        <p class="h2--regular format--remove-margin color--grey-800"><span class="body--small-regular color--grey-800">$</span> 41<span class="body--small-light color--grey-800" style="width:56px;"> + tax & fees</span></p>  
-                    </container>
-                </container>
-            </container>
-        </container>
-        
-        <div id="contactBrokerModal" class="modal">
-            <div class="modal-container">
-                <container class="modal-header padding--24">
-                    <span class="close-modal">&times;</span>
-                    <p class="body--medium-bold color--grey-800">Something need fixing?</p>    
-                </container>
-                <div class="divider--horizontal"></div>
-                <container class="modal-content">
-                    <p class="body--medium-regular color--grey-600">Need to change something on this page? No problem! Include a short message to your broker and they will reach out to you shortly.</p>
-                    <textarea name="endorsement-broker-message" class="body--medium-regular" rows="4" cols="50" placeholder="Enter message here..."></textarea>
-                </container>
-                <container class="modal-footer">
-                    <button class="button button--tertiary button--small">Cancel</button>
-                    <button class="button button--primary button--small">Send message</button>
-                </container>
-            </div>
-        </div>
-
-    </container>
-
-    <footer id="bottomBar" class="footer--main" style="display: none;">
-        <button id="reviewEndorsementNext" onclick="window.location='./esign.html'" class="button button--primary body--medium-bold">Next</button>
-    </footer>
+    </div>
 
 </body>
+
 </html>

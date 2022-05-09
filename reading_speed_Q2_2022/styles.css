@@ -1,0 +1,52 @@
+:root {
+    --green-100: #e7fffa;
+    --green-300: #b4ebe7;
+    --green-600: #2ca59b;
+    --green-700: #08756c;
+    --green-900: #032e2a;
+
+    --grey-100: #fff;
+    --grey-200: #f9f9f9;
+    --grey-300: #f3f3f3;
+    --grey-400: #dae1e7;
+    --grey-500: #b8c2cc;
+    --grey-600: #8795a1;
+    --grey-700: #6d798a;
+    --grey-800: #3d4852;
+    --grey-900: #18191a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Formatting */
+.format--flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+/* Buttons */
+.button {
+    height: 72px;
+    width: 262px;
+    border-radius: 4px;
+    border: none;
+    color: var(--grey-100);
+    background-color: var(--green-600);
+    font-family: "Open Sans";
+    font-size: 16px;
+    box-shadow: 0px 4px 6px #b8c2cc33;
+}
+
+.button:hover {
+    background-color: var(--green-700);
+}
+
+.button:focus {
+    background-color: var(--green-700);
+}
