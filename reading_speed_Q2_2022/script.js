@@ -1,8 +1,12 @@
 window.onload = function () {
 
   const timeScores = [];
-  const paragraphNumbers = ['paragraph1Wrapper', 'paragraph2Wrapper', 'paragraph3Wrapper'];
+  const unshuffledParagraphNumbers = ['zenDoc1-Georgia', 'zenDoc2-Times', 'zenDoc3-SegoeUI'];
+  const paragraphNumbers = knuthShuffle(unshuffledParagraphNumbers); //randomize paragraph order
   var countParagraphs = 0;
+
+  var displayButtonText = document.getElementById("start-complete")
+
   var seconds = 00;
   var tens = 00;
   var appendTens = document.getElementById("tens")
@@ -13,23 +17,30 @@ window.onload = function () {
   var Interval;
 
   buttonStart.onclick = function () {
-    var paragraph = document.getElementById(paragraphNumbers[countParagraphs]); //show paragraph & finish button
-    paragraph.style.display = "flex";
+    if (countParagraphs < (Object.keys(paragraphNumbers).length)) {
 
-    var button = document.getElementById("button-start"); //hide start button
-    button.style.display = "none";
+      var paragraph = document.getElementById(paragraphNumbers[countParagraphs]); //show paragraph & finish button
+      paragraph.style.display = "flex";
 
-    var button = document.getElementById("button-stop"); //show finish button
-    button.style.display = "block";
+      var button = document.getElementById("button-start"); //hide start button
+      button.style.display = "none";
 
-    clearInterval(Interval);
-    Interval = setInterval(startTimer, 10);
+      var button = document.getElementById("button-stop"); //show finish button
+      button.style.display = "block";
 
-    
+      clearInterval(Interval);
+      Interval = setInterval(startTimer, 10);
+    }
+    else {
+      console.log('ur done');
+
+
+    }
+
   }
 
   buttonStop.onclick = function () {
-    timeScores.push({ timeSeconds: seconds + (tens / 100) });
+    timeScores.push({ [paragraphNumbers[countParagraphs]]: seconds + (tens / 100) });
     console.log(timeScores);
     clearInterval(Interval);
 
@@ -43,6 +54,11 @@ window.onload = function () {
     button.style.display = "none";
 
     countParagraphs += 1;
+
+    if (countParagraphs >= (Object.keys(paragraphNumbers).length)) {
+      displayButtonText.innerHTML = "Complete Task";
+    }
+
 
   }
 
@@ -84,4 +100,16 @@ window.onload = function () {
   }
 
 
+}
+
+function knuthShuffle(arr) {
+  var rand, temp, i;
+
+  for (i = arr.length - 1; i > 0; i -= 1) {
+    rand = Math.floor((i + 1) * Math.random());//get random between zero and i (inclusive)
+    temp = arr[rand];//swap i and the zero-indexed number
+    arr[rand] = arr[i];
+    arr[i] = temp;
+  }
+  return arr;
 }
