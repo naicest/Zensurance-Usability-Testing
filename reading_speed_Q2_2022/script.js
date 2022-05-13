@@ -41,8 +41,11 @@ window.onload = function () {
   }
 
   buttonStop.onclick = function () {
-    timeScores.push({ [paragraphNumbers[countParagraphs]]: seconds + (tens / 100) });
+    var currentTime = seconds + (tens / 100);
+    timeScores.push({ [paragraphNumbers[countParagraphs]]: currentTime });
     console.log(timeScores);
+    document.getElementById(paragraphNumbers[countParagraphs].fieldLabelId).value = currentTime; //add time to spreadsheet form
+
     clearInterval(Interval);
 
     var paragraph = document.getElementById(paragraphNumbers[countParagraphs].paraId); //hide paragraph & finish button
@@ -54,7 +57,7 @@ window.onload = function () {
     var button = document.getElementById("button-stop"); //hide finish button
     button.style.display = "none";
 
-    //var spreadSheetValue = document.getElementById(paragraphNumbers[countParagraphs]); //add time to spreadsheet form
+
     countParagraphs += 1;
 
     if (countParagraphs >= (Object.keys(paragraphNumbers).length)) {
