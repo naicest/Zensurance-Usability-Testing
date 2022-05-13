@@ -1,7 +1,8 @@
 window.onload = function () {
 
   const timeScores = [];
-  const unshuffledParagraphNumbers = ['zenDoc1-Georgia', 'zenDoc2-Times', 'zenDoc3-SegoeUI'];
+  const unshuffledParagraphNumbers = [{ paraId: 'zenDoc1-Georgia', fieldLabelId: 'zenDoc1-GeorgiaLabel' }, { paraId: 'zenDoc2-Times', fieldLabelId: 'zenDoc2-TimesLabel' }, { paraId: 'zenDoc3-SegoeUI', fieldLabelId: 'zenDoc3-SegoeUILabel' }];
+
   const paragraphNumbers = knuthShuffle(unshuffledParagraphNumbers); //randomize paragraph order
   var countParagraphs = 0;
 
@@ -19,7 +20,7 @@ window.onload = function () {
   buttonStart.onclick = function () {
     if (countParagraphs < (Object.keys(paragraphNumbers).length)) {
 
-      var paragraph = document.getElementById(paragraphNumbers[countParagraphs]); //show paragraph & finish button
+      var paragraph = document.getElementById(paragraphNumbers[countParagraphs].paraId); //show paragraph & finish button
       paragraph.style.display = "flex";
 
       var button = document.getElementById("button-start"); //hide start button
@@ -53,10 +54,13 @@ window.onload = function () {
     var button = document.getElementById("button-stop"); //hide finish button
     button.style.display = "none";
 
+    //var spreadSheetValue = document.getElementById(paragraphNumbers[countParagraphs]); //add time to spreadsheet form
     countParagraphs += 1;
 
     if (countParagraphs >= (Object.keys(paragraphNumbers).length)) {
       displayButtonText.innerHTML = "Complete Task";
+
+
     }
 
 
