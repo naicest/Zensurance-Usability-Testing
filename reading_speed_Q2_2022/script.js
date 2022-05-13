@@ -45,7 +45,7 @@ window.onload = function () {
     console.log(timeScores);
     clearInterval(Interval);
 
-    var paragraph = document.getElementById(paragraphNumbers[countParagraphs]); //hide paragraph & finish button
+    var paragraph = document.getElementById(paragraphNumbers[countParagraphs].paraId); //hide paragraph & finish button
     paragraph.style.display = "none";
 
     var button = document.getElementById("button-start"); //show next button
