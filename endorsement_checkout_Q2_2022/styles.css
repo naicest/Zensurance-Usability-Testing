@@ -104,6 +104,10 @@ body {
   color: var(--grey-800);
 }
 
+.color--green-700 {
+  color: var(--green-700);
+}
+
 .text--center-align {
   text-align: center;
 }

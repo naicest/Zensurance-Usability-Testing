@@ -5,16 +5,12 @@ window.onload = function () {
 
   const paragraphNumbers = knuthShuffle(unshuffledParagraphNumbers); //randomize paragraph order
   var countParagraphs = 0;
-
-  var displayButtonText = document.getElementById("start-complete")
-
   var seconds = 00;
   var tens = 00;
   var appendTens = document.getElementById("tens")
   var appendSeconds = document.getElementById("seconds")
   var buttonStart = document.getElementById('button-start');
   var buttonStop = document.getElementById('button-stop');
-  var buttonReset = document.getElementById('button-reset');
   var Interval;
 
   buttonStart.onclick = function () {
@@ -66,11 +62,14 @@ window.onload = function () {
     countParagraphs += 1;
 
     if (countParagraphs >= (Object.keys(paragraphNumbers).length)) {
-      displayButtonText.innerHTML = "Complete Task";
       document.getElementById("timesForm").submit();
-      
       //alert("Your form submitted");
 
+      var button = document.getElementById("button-start"); //hide start button
+      button.style.display = "none";
+
+      var button = document.getElementById("button-complete-task"); //show finish task button
+      button.style.display = "block";
 
     }
 

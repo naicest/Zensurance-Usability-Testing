@@ -5,204 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../endorsement_checkout_Q2_2022/">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Open+Sans&family=Rubik&family=Work+Sans&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <script src="./script.js"></script>
 
+    <title>Start Task!</title>
 </head>
 
 <body>
-    <container class="main-container">
-        <p style="color: white;"><span id="seconds">00</span>:<span id="tens">00</span></p>
+    <container class="container--main-content">
+        <container class="container--full-page-message">
+            <img src="../endorsement_checkout_Q2_2022/images/celebrate-graphic.svg" alt="party popper"
+                class="graphic--celebrate padding--bottom-16">
+            <h1 class="h1--bold text--center-align format--remove-margin">Thank you for agreeing to partipate in this
+                research task! Please read the instructions below before getting started. </h1>
+            <p class="body--medium-regular text--center-align format--remove-margin">For this task, you will be
+                presented with a series of texts to read.
+                Please read each passage in its entirety, and as soon as you are finished reading, press the “Finish”
+                button. This task should take approximately 15 minutes to complete.</p>
+            <button class="button" id="button-begin-task" onclick="window.location='./task.html'">Begin Task</button>
 
-        <div class="format--flex-column">
-            <div class="wrapper format--flex-column">
-                <button class="button" id="button-start"><span id="start-complete">Start</span></button>
-            </div>
-            <div id="doc1-LibreFranklin" style="display: none; flex-direction: column;">
-                <p style="font-family: Libre Franklin;">Our society is becoming increasingly dependent on
-                    advanced technological systems. For example,
-                    space vehicles and high-altitude aircraft rely on sophisticated, yet delicate, computer systems both
-                    for safety
-                    and for navigation. Global communications depend on high-frequency (or HF), very high frequency (or
-                    VHF), and
-                    ultra high frequency (or UHF) radio signals. Power distribution relies on an interconnected network
-                    of lines,
-                    transformers, computers, and other devices. As a result, we need to be aware of the potential
-                    effects of
-                    geomagnetic storms on their ability to function.
-                    Geomagnetic storms occur when a mass of plasma is ejected from the Sun and strikes the Earth and its
-                    surroundings. This plasma "bubble" travels away from the Sun at about two million miles per hour,
-                    and follows
-                    the three-dimensional spiral pattern of the Sun's magnetic field. It can reach Earth in about 40
-                    hours.
-                </p>
-            </div>
-
-            <div id="doc2-OpenSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Open Sans';">Our society is becoming increasingly
-                    dependent on advanced technological systems. For example,
-                    space vehicles and high-altitude aircraft rely on sophisticated, yet delicate, computer systems both
-                    for safety
-                    and for navigation. Global communications depend on high-frequency (or HF), very high frequency (or
-                    VHF), and
-                    ultra high frequency (or UHF) radio signals. Power distribution relies on an interconnected network
-                    of lines,
-                    transformers, computers, and other devices. As a result, we need to be aware of the potential
-                    effects of
-                    geomagnetic storms on their ability to function.
-                    Geomagnetic storms occur when a mass of plasma is ejected from the Sun and strikes the Earth and its
-                    surroundings. This plasma "bubble" travels away from the Sun at about two million miles per hour,
-                    and follows
-                    the three-dimensional spiral pattern of the Sun's magnetic field. It can reach Earth in about 40
-                    hours.
-                </p>
-            </div>
-
-            <div id="doc3-Rubik" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Rubik';">Our society is becoming increasingly dependent on
-                    advanced technological systems. For example,
-                    space vehicles and high-altitude aircraft rely on sophisticated, yet delicate, computer systems both
-                    for safety
-                    and for navigation. Global communications depend on high-frequency (or HF), very high frequency (or
-                    VHF), and
-                    ultra high frequency (or UHF) radio signals. Power distribution relies on an interconnected network
-                    of lines,
-                    transformers, computers, and other devices. As a result, we need to be aware of the potential
-                    effects of
-                    geomagnetic storms on their ability to function.
-                    Geomagnetic storms occur when a mass of plasma is ejected from the Sun and strikes the Earth and its
-                    surroundings. This plasma "bubble" travels away from the Sun at about two million miles per hour,
-                    and follows
-                    the three-dimensional spiral pattern of the Sun's magnetic field. It can reach Earth in about 40
-                    hours.
-                </p>
-            </div>
-
-            <div id="doc4-WorkSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Work Sans';">Our society is becoming increasingly dependent on
-                    advanced technological systems. For example,
-                    space vehicles and high-altitude aircraft rely on sophisticated, yet delicate, computer systems both
-                    for safety
-                    and for navigation. Global communications depend on high-frequency (or HF), very high frequency (or
-                    VHF), and
-                    ultra high frequency (or UHF) radio signals. Power distribution relies on an interconnected network
-                    of lines,
-                    transformers, computers, and other devices. As a result, we need to be aware of the potential
-                    effects of
-                    geomagnetic storms on their ability to function.
-                    Geomagnetic storms occur when a mass of plasma is ejected from the Sun and strikes the Earth and its
-                    surroundings. This plasma "bubble" travels away from the Sun at about two million miles per hour,
-                    and follows
-                    the three-dimensional spiral pattern of the Sun's magnetic field. It can reach Earth in about 40
-                    hours.
-                </p>
-            </div>
-            <div id="lit1-LibreFranklin" style="display: none; flex-direction: column;">
-                <p style="font-family: Libre Franklin;">Our society is becoming increasingly dependent on
-                    advanced technological systems. For example,
-                    space vehicles and high-altitude aircraft rely on sophisticated, yet delicate, computer systems both
-                    for safety
-                    and for navigation. Global communications depend on high-frequency (or HF), very high frequency (or
-                    VHF), and
-                    ultra high frequency (or UHF) radio signals. Power distribution relies on an interconnected network
-                    of lines,
-                    transformers, computers, and other devices. As a result, we need to be aware of the potential
-                    effects of
-                    geomagnetic storms on their ability to function.
-                    Geomagnetic storms occur when a mass of plasma is ejected from the Sun and strikes the Earth and its
-                    surroundings. This plasma "bubble" travels away from the Sun at about two million miles per hour,
-                    and follows
-                    the three-dimensional spiral pattern of the Sun's magnetic field. It can reach Earth in about 40
-                    hours.
-                </p>
-            </div>
-
-            <div id="lit2-OpenSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Open Sans';">Our society is becoming increasingly
-                    dependent on advanced technological systems. For example,
-                    space vehicles and high-altitude aircraft rely on sophisticated, yet delicate, computer systems both
-                    for safety
-                    and for navigation. Global communications depend on high-frequency (or HF), very high frequency (or
-                    VHF), and
-                    ultra high frequency (or UHF) radio signals. Power distribution relies on an interconnected network
-                    of lines,
-                    transformers, computers, and other devices. As a result, we need to be aware of the potential
-                    effects of
-                    geomagnetic storms on their ability to function.
-                    Geomagnetic storms occur when a mass of plasma is ejected from the Sun and strikes the Earth and its
-                    surroundings. This plasma "bubble" travels away from the Sun at about two million miles per hour,
-                    and follows
-                    the three-dimensional spiral pattern of the Sun's magnetic field. It can reach Earth in about 40
-                    hours.
-                </p>
-            </div>
-
-            <div id="lit3-Rubik" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Rubik';">Our society is becoming increasingly dependent on
-                    advanced technological systems. For example,
-                    space vehicles and high-altitude aircraft rely on sophisticated, yet delicate, computer systems both
-                    for safety
-                    and for navigation. Global communications depend on high-frequency (or HF), very high frequency (or
-                    VHF), and
-                    ultra high frequency (or UHF) radio signals. Power distribution relies on an interconnected network
-                    of lines,
-                    transformers, computers, and other devices. As a result, we need to be aware of the potential
-                    effects of
-                    geomagnetic storms on their ability to function.
-                    Geomagnetic storms occur when a mass of plasma is ejected from the Sun and strikes the Earth and its
-                    surroundings. This plasma "bubble" travels away from the Sun at about two million miles per hour,
-                    and follows
-                    the three-dimensional spiral pattern of the Sun's magnetic field. It can reach Earth in about 40
-                    hours.
-                </p>
-            </div>
-
-            <div id="lit4-WorkSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Work Sans';">Our society is becoming increasingly dependent on
-                    advanced technological systems. For example,
-                    space vehicles and high-altitude aircraft rely on sophisticated, yet delicate, computer systems both
-                    for safety
-                    and for navigation. Global communications depend on high-frequency (or HF), very high frequency (or
-                    VHF), and
-                    ultra high frequency (or UHF) radio signals. Power distribution relies on an interconnected network
-                    of lines,
-                    transformers, computers, and other devices. As a result, we need to be aware of the potential
-                    effects of
-                    geomagnetic storms on their ability to function.
-                    Geomagnetic storms occur when a mass of plasma is ejected from the Sun and strikes the Earth and its
-                    surroundings. This plasma "bubble" travels away from the Sun at about two million miles per hour,
-                    and follows
-                    the three-dimensional spiral pattern of the Sun's magnetic field. It can reach Earth in about 40
-                    hours.
-                </p>
-            </div>
-            <button class="button" id="button-stop" style="display: none;">Finish</button>
-
-        </div>
-        <form id="timesForm" method="POST" target="dummyframe"
-            action="https://script.google.com/macros/s/AKfycbzH-YVRKRAuNMo-SF-Mx0IS_njlg-dDyHc0hwhwOc-7mQmoFdLXCB2EdxWTOoULNbyWxg/exec">
-            <input name="Doc 1 - Libre Franklin" type="text" id="doc1-LibreFranklin-Label" style="display:none;"
-                required>
-            <input name="Doc 2 - Open Sans" type="text" id="doc2-OpenSans-Label" style="display:none;" required>
-            <input name="Doc 3 - Rubik" type="text" id="doc3-Rubik-Label" style="display:none;" required>
-            <input name="Doc 4 - Work Sans" type="text" id="doc4-WorkSans-Label" style="display:none;" required>
-
-            <input name="Lit 1 - Libre Franklin" type="text" id="lit1-LibreFranklin-Label" style="display:none;"
-                required>
-            <input name="Lit 2 - Open Sans" type="text" id="lit2-OpenSans-Label" style="display:none;" required>
-            <input name="Lit 3 - Rubik" type="text" id="lit3-Rubik-Label" style="display:none;" required>
-            <input name="Lit 4 - Work Sans" type="text" id="lit4-WorkSans-Label" style="display:none;" required>
-        </form>
+        </container>
     </container>
 
-    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-
 </body>
-
-</html>
