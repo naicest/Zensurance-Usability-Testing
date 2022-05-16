@@ -19,12 +19,14 @@
 </head>
 
 <body>
-    <container class="main-container">
+    <container class="container--main-content">
         <p style="color: white;"><span id="seconds">00</span>:<span id="tens">00</span></p>
 
         <div class="format--flex-column">
             <div class="wrapper format--flex-column">
-                <button class="button" id="button-start"><span id="start-complete">Start</span></button>
+                <h1 class="h1--bold text--center-align" id="start-msg-1">When you are ready to begin reading the first passage, press start. </h1>
+                <h1 class="h1--bold text--center-align" id="start-msg-2" style="display: none;">When you are ready to begin reading the next passage, press start. </h1>
+                <button class="button" id="button-start">Start</button>
             </div>
             <div id="doc1-LibreFranklin" style="display: none; flex-direction: column;">
                 <p style="font-family: Libre Franklin;">Each Insurer's maximum limit of liability for all loss will be

@@ -12,6 +12,7 @@ window.onload = function () {
   var buttonStart = document.getElementById('button-start');
   var buttonStop = document.getElementById('button-stop');
   var Interval;
+  var firstMsgRead = false;
 
   buttonStart.onclick = function () {
     if (countParagraphs < (Object.keys(paragraphNumbers).length)) {
@@ -24,6 +25,20 @@ window.onload = function () {
 
       var button = document.getElementById("button-stop"); //show finish button
       button.style.display = "block";
+
+      if (firstMsgRead === false) {
+        var msg = document.getElementById("start-msg-1"); //hide start message 1
+        msg.style.display = "none";
+
+        firstMsgRead = true
+      }
+      else {
+        var msg = document.getElementById("start-msg-2"); //hide start message 2
+        msg.style.display = "none";
+      }
+
+
+
 
       clearInterval(Interval);
       Interval = setInterval(startTimer, 10);
@@ -58,7 +73,6 @@ window.onload = function () {
     var button = document.getElementById("button-stop"); //hide finish button
     button.style.display = "none";
 
-
     countParagraphs += 1;
 
     if (countParagraphs >= (Object.keys(paragraphNumbers).length)) {
@@ -71,6 +85,11 @@ window.onload = function () {
       var button = document.getElementById("button-complete-task"); //show finish task button
       button.style.display = "block";
 
+    }
+    else {
+      var msg = document.getElementById("start-msg-2"); //show start message 2
+      msg.style.display = "block";
+  
     }
 
 
