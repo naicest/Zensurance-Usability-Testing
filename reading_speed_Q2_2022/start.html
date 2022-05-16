@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js"></script>
-    
+
 </head>
 
 <body>
@@ -82,13 +82,16 @@
             <button class="button" id="button-stop" style="display: none;">Finish</button>
 
         </div>
-        <form method="POST" action="https://script.google.com/macros/s/AKfycbzH-YVRKRAuNMo-SF-Mx0IS_njlg-dDyHc0hwhwOc-7mQmoFdLXCB2EdxWTOoULNbyWxg/exec">
-            <input name="Zen Doc 1 - Georgia" type="text" id="zenDoc1-GeorgiaLabel" placeholder="Name" required>
-            <input name="Zen Doc 2 - Times" type="text" id="zenDoc2-TimesLabel" placeholder="Name" required>
-            <input name="Zen Doc 3 - SegoeUI" type="text" id="zenDoc3-SegoeUILabel" placeholder="Name" required>
-            <button type="submit">Send</button>
+        <form id="timesForm" method="POST" target="dummyframe"
+            action="https://script.google.com/macros/s/AKfycbzH-YVRKRAuNMo-SF-Mx0IS_njlg-dDyHc0hwhwOc-7mQmoFdLXCB2EdxWTOoULNbyWxg/exec">
+            <input name="Zen Doc 1 - Georgia" type="text" id="zenDoc1-GeorgiaLabel" style="display:none;" required>
+            <input name="Zen Doc 2 - Times" type="text" id="zenDoc2-TimesLabel" style="display:none;" required>
+            <input name="Zen Doc 3 - SegoeUI" type="text" id="zenDoc3-SegoeUILabel" style="display:none;" required>
         </form>
     </container>
+
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
 </body>
 
 </html>

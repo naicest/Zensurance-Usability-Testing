@@ -62,6 +62,9 @@ window.onload = function () {
 
     if (countParagraphs >= (Object.keys(paragraphNumbers).length)) {
       displayButtonText.innerHTML = "Complete Task";
+      document.getElementById("timesForm").submit();
+      
+      //alert("Your form submitted");
 
 
     }
