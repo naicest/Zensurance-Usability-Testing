@@ -1,7 +1,7 @@
 window.onload = function () {
 
   const timeScores = [];
-  const unshuffledParagraphNumbers = [{ paraId: 'zenDoc1-Georgia', fieldLabelId: 'zenDoc1-GeorgiaLabel' }, { paraId: 'zenDoc2-Times', fieldLabelId: 'zenDoc2-TimesLabel' }, { paraId: 'zenDoc3-SegoeUI', fieldLabelId: 'zenDoc3-SegoeUILabel' }];
+  const unshuffledParagraphNumbers = [{ paraId: 'doc1-LibreFranklin', fieldLabelId: 'doc1-LibreFranklin-Label' }, { paraId: 'doc2-OpenSans', fieldLabelId: 'doc2-OpenSans-Label' }, { paraId: 'doc3-Rubik', fieldLabelId: 'doc3-Rubik-Label' }, { paraId: 'doc4-WorkSans', fieldLabelId: 'doc4-WorkSans-Label' }, { paraId: 'lit1-LibreFranklin', fieldLabelId: 'lit1-LibreFranklin-Label' }, { paraId: 'lit2-OpenSans', fieldLabelId: 'lit2-OpenSans-Label' }, { paraId: 'lit3-Rubik', fieldLabelId: 'lit3-Rubik-Label' }, { paraId: 'lit4-WorkSans', fieldLabelId: 'lit4-WorkSans-Label' }];
 
   const paragraphNumbers = knuthShuffle(unshuffledParagraphNumbers); //randomize paragraph order
   var countParagraphs = 0;
@@ -47,7 +47,12 @@ window.onload = function () {
     document.getElementById(paragraphNumbers[countParagraphs].fieldLabelId).value = currentTime; //add time to spreadsheet form
 
     clearInterval(Interval);
-
+    tens = "00";
+    seconds = "00";
+    appendTens.innerHTML = tens;
+    appendSeconds.innerHTML = seconds;
+    console.log(currentTime)
+;
     var paragraph = document.getElementById(paragraphNumbers[countParagraphs].paraId); //hide paragraph & finish button
     paragraph.style.display = "none";
 
@@ -71,16 +76,6 @@ window.onload = function () {
 
 
   }
-
-
-  buttonReset.onclick = function () {
-    clearInterval(Interval);
-    tens = "00";
-    seconds = "00";
-    appendTens.innerHTML = tens;
-    appendSeconds.innerHTML = seconds;
-  }
-
 
 
   function startTimer() {
