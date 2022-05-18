@@ -40,6 +40,15 @@
                     delivered.
                 </p>
             </div>
+            <form id="doc1-Quiz" action="" style="display: none;">
+                <input type="radio" id="incorrect1" name="doc1-Quiz-Option" value="incorrect d1" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+                <input type="radio" id="correct" name="doc1-Quiz-Option" value="correct d1" required>
+                <label for="correct">Correct Answer</label><br>
+                <input type="radio" id="incorrect2" name="doc1-Quiz-Option" value="incorrect d1" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+            </form>
+
 
             <div id="doc2-OpenSans" style="display: none; flex-direction: column;">
                 <p style="font-family: 'Open Sans';">You can expect to access clear information about your policy, your
@@ -52,6 +61,15 @@
                     prescribed, which could vary by province, but is usually 45 days prior to expiry of the policy.
                 </p>
             </div>
+            <form id="doc2-Quiz" action="" style="display: none;">
+                <input type="radio" id="incorrect1" name="doc2-Quiz-Option" value="incorrect d2" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+                <input type="radio" id="correct" name="doc2-Quiz-Option" value="correct d2" required>
+                <label for="correct">Correct Answer</label><br>
+                <input type="radio" id="incorrect2" name="doc2-Quiz-Option" value="incorrect d2" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+            </form>
+
 
             <div id="doc3-WorkSans" style="display: none; flex-direction: column;">
                 <p style="font-family: 'Work Sans';">Due to the nature of the coverage offered by this Policy, any
@@ -67,6 +85,15 @@
                     prior written consent of the cyber incident manager (which will not be unreasonably withheld).
                 </p>
             </div>
+            <form id="doc3-Quiz" action="" style="display: none;">
+                <input type="radio" id="incorrect1" name="doc3-Quiz-Option" value="incorrect d3" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+                <input type="radio" id="correct" name="doc3-Quiz-Option" value="correct d3" required>
+                <label for="correct">Correct Answer</label><br>
+                <input type="radio" id="incorrect2" name="doc3-Quiz-Option" value="incorrect d3" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+            </form>
+
 
             <div id="lit1-Lato" style="display: none; flex-direction: column;">
                 <p style="font-family: 'Lato';">But it was the cooking that occurred in her friends' homes that
@@ -87,6 +114,15 @@
                     laughter when Lillian had pushed the small, spiky branch near her nose
                 </p>
             </div>
+            <form id="lit1-Quiz" action="" style="display: none;">
+                <input type="radio" id="incorrect1" name="lit1-Quiz-Option" value="incorrect l1" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+                <input type="radio" id="correct" name="lit1-Quiz-Option" value="correct l1" required>
+                <label for="correct">Correct Answer</label><br>
+                <input type="radio" id="incorrect2" name="lit1-Quiz-Option" value="incorrect l1" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+            </form>
+
 
             <div id="lit2-OpenSans" style="display: none; flex-direction: column;">
                 <p style="font-family: 'Open Sans';">Encouraged, he walked westward, till he struck a deer trail which
@@ -104,6 +140,15 @@
                     knife she was up and away, the white tail flashing.
                 </p>
             </div>
+            <form id="lit2-Quiz" action="" style="display: none;">
+                <input type="radio" id="incorrect1" name="lit2-Quiz-Option" value="incorrect l2" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+                <input type="radio" id="correct" name="lit2-Quiz-Option" value="correct l2" required>
+                <label for="correct">Correct Answer</label><br>
+                <input type="radio" id="incorrect2" name="lit2-Quiz-Option" value="incorrect l2" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+            </form>
+
 
             <div id="lit3-WorkSans" style="display: none; flex-direction: column;">
                 <p style="font-family: 'Work Sans';">At home in Ballyroan, in the single-story cottage that stood beside the
@@ -123,25 +168,25 @@
                     seeing how your sister does it?"
                 </p>
             </div>
-
-            <form id="doc1-Quiz" action="">
-                <input type="radio" id="incorrect1" name="option" value="incorrect1" required>
+            <form id="lit3-Quiz" action="" style="display: none;">
+                <input type="radio" id="incorrect1" name="lit3-Quiz-Option" value="incorrect l3" required>
                 <label for="incorrect1">Incorrect answer</label><br>
-                <input type="radio" id="correct" name="option" value="correct" required>
-                <label for="css">Correct Answer</label><br>
-                <input type="radio" id="incorrect2" name="option" value="incorrect2" required>
+                <input type="radio" id="correct" name="lit3-Quiz-Option" value="correct l3" required>
+                <label for="correct">Correct Answer</label><br>
+                <input type="radio" id="incorrect2" name="lit3-Quiz-Option" value="incorrect l3" required>
                 <label for="incorrect1">Incorrect answer</label><br>
             </form>
 
+
             <button class="button" id="button-stop" style="display: none;">Finish</button>
+            <button class="button" id="button-quiz-submit" style="display: none;">Submit Quiz</button>
             <button class="button" id="button-complete-task" onclick="window.location='./success.html'"
                 style="display: none;">Complete Task</button>
         </div>
 
         <form id="timesForm" method="POST" target="dummy-frame"
             action="https://script.google.com/macros/s/AKfycbzH-YVRKRAuNMo-SF-Mx0IS_njlg-dDyHc0hwhwOc-7mQmoFdLXCB2EdxWTOoULNbyWxg/exec">
-            <input name="Doc 1 - Lato" type="text" id="doc1-Lato-Label" style="display:none;"
-                required>
+            <input name="Doc 1 - Lato" type="text" id="doc1-Lato-Label" style="display:none;" required>
             <input name="Doc 2 - Open Sans" type="text" id="doc2-OpenSans-Label" style="display:none;" required>
             <input name="Doc 3 - Work Sans" type="text" id="doc3-WorkSans-Label" style="display:none;" required>
 
@@ -149,6 +194,16 @@
                 required>
             <input name="Lit 2 - Open Sans" type="text" id="lit2-OpenSans-Label" style="display:none;" required>
             <input name="Lit 3 - Work Sans" type="text" id="lit3-WorkSans-Label" style="display:none;" required>
+
+            <input name="QUIZ Doc 1 - Lato" type="text" id="doc1-Quiz-Label" style="display:none;" required>
+            <input name="QUIZ Doc 2 - Open Sans" type="text" id="doc2-Quiz-Label" style="display:none;" required>
+            <input name="QUIZ Doc 3 - Work Sans" type="text" id="doc3-Quiz-Label" style="display:none;" required>
+
+            <input name="QUIZ Lit 1 - Lato" type="text" id="lit1-Quiz-Label" style="display:none;"
+                required>
+            <input name="QUIZ Lit 2 - Open Sans" type="text" id="lit2-Quiz-Label" style="display:none;" required>
+            <input name="QUIZ Lit 3 - Work Sans" type="text" id="lit3-Quiz-Label" style="display:none;" required>
+
         </form>
     </container>
 
