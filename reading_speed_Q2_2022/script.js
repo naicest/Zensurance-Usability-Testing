@@ -1,7 +1,14 @@
 window.onload = function () {
 
   const timeScores = [];
-  const unshuffledParagraphNumbers = [{ paraId: 'doc1-LibreFranklin', fieldLabelId: 'doc1-LibreFranklin-Label' }, { paraId: 'doc2-OpenSans', fieldLabelId: 'doc2-OpenSans-Label' }, { paraId: 'doc3-Rubik', fieldLabelId: 'doc3-Rubik-Label' }, { paraId: 'doc4-WorkSans', fieldLabelId: 'doc4-WorkSans-Label' }, { paraId: 'lit1-LibreFranklin', fieldLabelId: 'lit1-LibreFranklin-Label' }, { paraId: 'lit2-OpenSans', fieldLabelId: 'lit2-OpenSans-Label' }, { paraId: 'lit3-Rubik', fieldLabelId: 'lit3-Rubik-Label' }, { paraId: 'lit4-WorkSans', fieldLabelId: 'lit4-WorkSans-Label' }];
+  const unshuffledParagraphNumbers = [
+    { paraId: 'doc1-Lato', fieldLabelId: 'doc1-Lato-Label', quizId: 'doc1-Quiz', quizLabelId: 'doc1-Quiz-Label' },
+    { paraId: 'doc2-OpenSans', fieldLabelId: 'doc2-OpenSans-Label', quizId: 'doc2-Quiz', quizLabelId: 'doc2-Quiz-Label' },
+    { paraId: 'doc3-WorkSans', fieldLabelId: 'doc3-WorkSans-Label', quizId: 'doc3-Quiz', quizLabelId: 'doc3-Quiz-Label' },
+    { paraId: 'lit1-Lato', fieldLabelId: 'lit1-Lato-Label', quizId: 'lit1-Quiz', quizLabelId: 'lit1-Quiz-Label' },
+    { paraId: 'lit2-OpenSans', fieldLabelId: 'lit2-OpenSans-Label', quizId: 'lit2-Quiz', quizLabelId: 'lit2-Quiz-Label' },
+    { paraId: 'lit3-WorkSans', fieldLabelId: 'lit3-WorkSans-Label', quizId: 'lit3-Quiz', quizLabelId: 'lit3-Quiz-Label' }
+  ];
 
   const paragraphNumbers = knuthShuffle(unshuffledParagraphNumbers); //randomize paragraph order
   var countParagraphs = 0;
@@ -63,7 +70,7 @@ window.onload = function () {
     appendTens.innerHTML = tens;
     appendSeconds.innerHTML = seconds;
     console.log(currentTime)
-;
+      ;
     var paragraph = document.getElementById(paragraphNumbers[countParagraphs].paraId); //hide paragraph & finish button
     paragraph.style.display = "none";
 
@@ -89,7 +96,7 @@ window.onload = function () {
     else {
       var msg = document.getElementById("start-msg-2"); //show start message 2
       msg.style.display = "block";
-  
+
     }
 
 
@@ -129,7 +136,7 @@ function knuthShuffle(arr) {
   var rand, temp, i;
 
   for (i = arr.length - 1; i > 0; i -= 1) {
-    rand = Math.floor((i + 1) * Math.random());//get random between zero and i (inclusive)
+    rand = Math.floor((i + 1) * Math.random()); //get random between zero and i (inclusive)
     temp = arr[rand];//swap i and the zero-indexed number
     arr[rand] = arr[i];
     arr[i] = temp;

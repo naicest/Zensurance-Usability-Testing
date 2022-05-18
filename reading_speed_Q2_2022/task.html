@@ -9,13 +9,8 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Open+Sans&family=Rubik&family=Work+Sans&display=swap"
-        rel="stylesheet">
-    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Work+Sans&display=swap" rel="stylesheet">    <script src="./script.js"></script>
     <title>Reading Task</title>
-
-
 </head>
 
 <body>
@@ -23,12 +18,14 @@
 
         <div class="format--flex-column">
             <div class="wrapper format--flex-column">
-                <h1 class="h1--bold text--center-align" id="start-msg-1">When you are ready to begin reading the first passage, press start. </h1>
-                <h1 class="h1--bold text--center-align" id="start-msg-2" style="display: none;">When you are ready to begin reading the next passage, press start. </h1>
+                <h1 class="h1--bold text--center-align" id="start-msg-1">When you are ready to begin reading the first
+                    passage, press start. </h1>
+                <h1 class="h1--bold text--center-align" id="start-msg-2" style="display: none;">When you are ready to
+                    begin reading the next passage, press start. </h1>
                 <button class="button" id="button-start">Start</button>
             </div>
-            <div id="doc1-LibreFranklin" style="display: none; flex-direction: column;">
-                <p style="font-family: Libre Franklin;">Each Insurer's maximum limit of liability for all loss will be
+            <div id="doc1-Lato" style="display: none; flex-direction: column;">
+                <p style="font-family: 'Lato';">Each Insurer's maximum limit of liability for all loss will be
                     equal to its proportionate share of the applicable Limit, Limit of Liability, or Limit of Insurance,
                     as set forth in in the Schedule of Coverage of the Declarations to this policy, with said
                     proportionate share to be determined by the Insurer's percentage participation as set out in the
@@ -56,8 +53,8 @@
                 </p>
             </div>
 
-            <div id="doc3-Rubik" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Rubik';">Due to the nature of the coverage offered by this Policy, any
+            <div id="doc3-WorkSans" style="display: none; flex-direction: column;">
+                <p style="font-family: 'Work Sans';">Due to the nature of the coverage offered by this Policy, any
                     unreasonable delay by you in notifying the cyber incident manager could lead to the size of the
                     claim increasing or to our rights of recovery being restricted. We will not be liable for that
                     portion of any claim that is due to any unreasonable delay in you notifying the cyber incident
@@ -71,28 +68,8 @@
                 </p>
             </div>
 
-            <div id="doc4-WorkSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Work Sans';">This Policy may be canceled with 30 days written notice by either
-                    you or us.
-
-                    If you give us notice of cancellation, the return premium will be in proportion to the number of
-                    days that the Policy is in effect, subject to a minimum retained amount of 30% of the premium.
-                    However, if you have made a claim under this Policy there will be no return premium.
-
-                    If we give you notice of cancellation, the return premium will be in proportion to the number of
-                    days that the Policy is in effect.
-
-                    We also reserve the right of cancellation in the event that any amount due to us by you remains
-                    unpaid more than 60 days
-                    beyond the inception date. If we exercise this right of cancellation it will take effect from 14
-                    days after the date the written
-                    notice of cancellation is issued.
-
-                    The Policy Administration Fee will be deemed fully earned upon inception of the Policy.
-                </p>
-            </div>
-            <div id="lit1-LibreFranklin" style="display: none; flex-direction: column;">
-                <p style="font-family: Libre Franklin;">But it was the cooking that occurred in her friends' homes that
+            <div id="lit1-Lato" style="display: none; flex-direction: column;">
+                <p style="font-family: 'Lato';">But it was the cooking that occurred in her friends' homes that
                     fascinated Lillian — the aromas that started calling to her just when she had to go home in the
                     evening. Some smells were sharp, an olfactory clatter of heels across a hardwood floor. Others felt
                     like the warmth in the air at the far end of summer. Lillian watched as the scent of melting cheese
@@ -128,8 +105,8 @@
                 </p>
             </div>
 
-            <div id="lit3-Rubik" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Rubik';">At home in Ballyroan, in the single-story cottage that stood beside the
+            <div id="lit3-WorkSans" style="display: none; flex-direction: column;">
+                <p style="font-family: 'Work Sans';">At home in Ballyroan, in the single-story cottage that stood beside the
                     sea, in the bed she shared with her older sister, eight-year-old Greta Cahill woke before dawn to a
                     sound that was not the ocean, was not the animals bawling into the wind, was not a slammed gate, a
                     clanging cowbell, or the rain beating on the gable. The sound was different, it was a first, and to
@@ -147,45 +124,31 @@
                 </p>
             </div>
 
-            <div id="lit4-WorkSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Work Sans';">Every morning, Claudia entered the building on West Thirteenth
-                    Street, rode the elevator up, and opened the front door of apartment 6F. She could immediately sense
-                    whether Betsy wanted to chat or be left alone; whether James was looking to play with the children
-                    or wanted them out of his hair. Rarely did Claudia have a discussion about the children's
-                    development or behavior, even if she was worried about something. She simply felt her way through
-                    the changes, taking stock of the vibe in the apartment and acting accordingly.
+            <form id="doc1-Quiz" action="">
+                <input type="radio" id="incorrect1" name="option" value="incorrect1" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+                <input type="radio" id="correct" name="option" value="correct" required>
+                <label for="css">Correct Answer</label><br>
+                <input type="radio" id="incorrect2" name="option" value="incorrect2" required>
+                <label for="incorrect1">Incorrect answer</label><br>
+            </form>
 
-                    This kind of familiarity took time to develop. Every family was different, and each time Claudia or
-                    her friends started a new job, there was another set of family rules to adapt to. There were mothers
-                    who expected a perfectly neat house when they walked in the door-toys put away, dishes washed and in
-                    the cabinets-and then there were mothers who eyed their living rooms suspiciously if books and
-                    blocks and trains weren't scattered around, tensing up at the thought that their nanny might not
-                    have been playing with their child that day. Some mothers wanted their children bathed while others
-                    were territorial about the task. Some mothers gave instructions about food and naps and outfits to
-                    be worn while others expected their nannies to take the initiative. Claudia was way past the
-                    breaking-in stage with the Halls, and if she was ever frustrated at work, she talked herself out of
-                    it. She could not leave this family and start all over again with another. It was just too hard.
-                </p>
-            </div>
             <button class="button" id="button-stop" style="display: none;">Finish</button>
-            <button class="button" id="button-complete-task" onclick="window.location='./success.html'" style="display: none;">Complete Task</button>
-
-
+            <button class="button" id="button-complete-task" onclick="window.location='./success.html'"
+                style="display: none;">Complete Task</button>
         </div>
 
         <form id="timesForm" method="POST" target="dummy-frame"
             action="https://script.google.com/macros/s/AKfycbzH-YVRKRAuNMo-SF-Mx0IS_njlg-dDyHc0hwhwOc-7mQmoFdLXCB2EdxWTOoULNbyWxg/exec">
-            <input name="Doc 1 - Libre Franklin" type="text" id="doc1-LibreFranklin-Label" style="display:none;"
+            <input name="Doc 1 - Lato" type="text" id="doc1-Lato-Label" style="display:none;"
                 required>
             <input name="Doc 2 - Open Sans" type="text" id="doc2-OpenSans-Label" style="display:none;" required>
-            <input name="Doc 3 - Rubik" type="text" id="doc3-Rubik-Label" style="display:none;" required>
-            <input name="Doc 4 - Work Sans" type="text" id="doc4-WorkSans-Label" style="display:none;" required>
+            <input name="Doc 3 - Work Sans" type="text" id="doc3-WorkSans-Label" style="display:none;" required>
 
-            <input name="Lit 1 - Libre Franklin" type="text" id="lit1-LibreFranklin-Label" style="display:none;"
+            <input name="Lit 1 - Lato" type="text" id="lit1-Lato-Label" style="display:none;"
                 required>
             <input name="Lit 2 - Open Sans" type="text" id="lit2-OpenSans-Label" style="display:none;" required>
-            <input name="Lit 3 - Rubik" type="text" id="lit3-Rubik-Label" style="display:none;" required>
-            <input name="Lit 4 - Work Sans" type="text" id="lit4-WorkSans-Label" style="display:none;" required>
+            <input name="Lit 3 - Work Sans" type="text" id="lit3-WorkSans-Label" style="display:none;" required>
         </form>
     </container>
 
