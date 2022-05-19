@@ -82,13 +82,12 @@ window.onload = function () {
 
   buttonQuizSubmit.onclick = function () {
 
-
     var getSelectedValue = document.querySelector(`input[name=${paragraphNumbers[countParagraphs].quizName}]:checked`); //get quiz answer
-
+    
     if (getSelectedValue != null) {
-      document.getElementById(paragraphNumbers[countParagraphs].quizLabelId).value = getSelectedValue.value; //add quiz answer to spreadsheet form        
-
-      var quiz = document.getElementById(paragraphNumbers[countParagraphs].quizId); //show quiz
+      document.getElementById(paragraphNumbers[countParagraphs].quizLabelId).value = getSelectedValue.value; //add quiz answer to spreadsheet form 
+      
+      var quiz = document.getElementById(paragraphNumbers[countParagraphs].quizId); //hide quiz
       quiz.style.display = "none";
 
       var button = document.getElementById("button-quiz-submit"); //hide quiz submit button

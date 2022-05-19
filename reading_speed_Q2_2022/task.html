@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Work+Sans&display=swap" rel="stylesheet">    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <script src="./script.js"></script>
     <title>Reading Task</title>
 </head>
 
 <body>
     <container class="container--main-content">
 
-        <div class="format--flex-column">
-            <div class="wrapper format--flex-column">
+        <div class="format--flex-column format--width-60percent">
+            <div class="format--flex-column format--width-60percent">
                 <h1 class="h1--bold text--center-align" id="start-msg-1">When you are ready to begin reading the first
                     passage, press start. </h1>
                 <h1 class="h1--bold text--center-align" id="start-msg-2" style="display: none;">When you are ready to
                     begin reading the next passage, press start. </h1>
                 <button class="button" id="button-start">Start</button>
             </div>
-            <div id="doc1-Lato" style="display: none; flex-direction: column;">
+            <div id="doc1-Lato" style="display: none;">
                 <p style="font-family: 'Lato';">Each Insurer's maximum limit of liability for all loss will be
                     equal to its proportionate share of the applicable Limit, Limit of Liability, or Limit of Insurance,
                     as set forth in in the Schedule of Coverage of the Declarations to this policy, with said
@@ -40,62 +42,64 @@
                     delivered.
                 </p>
             </div>
-            <form id="doc1-Quiz" action="" style="display: none;">
-                <input type="radio" id="incorrect1" name="doc1-Quiz-Option" value="incorrect d1" required>
-                <label for="incorrect1">Incorrect answer</label><br>
-                <input type="radio" id="correct" name="doc1-Quiz-Option" value="correct d1" required>
-                <label for="correct">Correct Answer</label><br>
-                <input type="radio" id="incorrect2" name="doc1-Quiz-Option" value="incorrect d1" required>
-                <label for="incorrect1">Incorrect answer</label><br>
+            <form id="doc1-Quiz" action="" style="display: none;" class="format--flex-column format--padding-bottom">
+                <p class="h1--bold text--center-align">There shall be no right to an appraisal
+                    until which conditions are met?</p>
+                <div>
+                    <input type="radio" id="incorrect1 d1" name="doc1-Quiz-Option" value="incorrect d1" required>
+                    <label class="body--medium-regular" for="incorrect1 d1">A specific demand is made therefor either verbally or in writing and proof of coverage has been delivered</label>
+                </div>
+                <div>
+                    <input type="radio" id="correct" name="doc1-Quiz-Option" value="correct d1" required>
+                    <label class="body--medium-regular" for="correct">A specific demand therefor is made in writing and proof of loss has been delivered</label>
+                </div>
+                <div><input type="radio" id="unknown d1" name="doc1-Quiz-Option" value="unknown d1" required>
+                    <label class="body--medium-regular" for="unknown d1">I don't know</label>
+                </div>
             </form>
 
 
-            <div id="doc2-OpenSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Open Sans';">You can expect to access clear information about your policy, your
-                    coverage, and the claims settlement process. You have the right to an easy-to-understand explanation
-                    of how insurance works and how it will meet your needs. You also have a right to know how insurers
-                    calculate price based on relevant facts. Under normal circumstances, insurers will advise an
-                    insurance customer or the customer's intermediary of changes to, or the cancellation of a policy
-                    within a reasonable prescribed period prior to the expiration of the policy, if the customer
-                    provides information required for determining renewal terms of the policy within the time
-                    prescribed, which could vary by province, but is usually 45 days prior to expiry of the policy.
+            <div id="doc2-OpenSans" style="display: none;">
+                <p style="font-family: 'Open Sans';">Product Liability Insurance is recommended for anyone who sells, manufactures, or distributes a product, including food.  It is beneficial to online retailers, as well as those operating a brick-and-mortar location. If you are a member of a distribution chain, ensure all suppliers, manufacturers, and distributors are adequately insured.  Please discuss with your broker whether or not you need to add them to your policy.  Conversely, make sure you are included as an additional insured on their policies, as you can be held responsible for product liability on their end, too. If you import or export products outside of North America, verify that the products are compliant with industry standards and that all labels contain the required and appropriate information. Product Liability Insurance does not cover service-related claims and only covers third-party property damage or bodily injury caused by a product you sell, manufacture, or distribute. Claims associated with failure to provide a service as advertised, negligence, or misconduct are covered by Professional Liability Insurance, also known as Error and Omissions.
                 </p>
             </div>
-            <form id="doc2-Quiz" action="" style="display: none;">
-                <input type="radio" id="incorrect1" name="doc2-Quiz-Option" value="incorrect d2" required>
-                <label for="incorrect1">Incorrect answer</label><br>
-                <input type="radio" id="correct" name="doc2-Quiz-Option" value="correct d2" required>
-                <label for="correct">Correct Answer</label><br>
-                <input type="radio" id="incorrect2" name="doc2-Quiz-Option" value="incorrect d2" required>
-                <label for="incorrect1">Incorrect answer</label><br>
+            <form id="doc2-Quiz" action="" style="display: none;" class="format--flex-column format--padding-bottom">
+                <p class="h1--bold text--center-align">Does Product Liability Insurance cover service-related claims?</p>
+                <div>
+                    <input type="radio" id="incorrect1 d2" name="doc2-Quiz-Option" value="incorrect1 d2" required>
+                    <label class="body--medium-regular" for="incorrect1 d2">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="correct d2" name="doc2-Quiz-Option" value="correct d2" required>
+                    <label class="body--medium-regular" for="correct d2">No</label>
+                </div>
+                <div><input type="radio" id="unknown d2" name="doc2-Quiz-Option" value="unknown d2" required>
+                    <label class="body--medium-regular" for="unknown d2">I don't know</label>
+                </div>
             </form>
 
 
-            <div id="doc3-WorkSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Work Sans';">Due to the nature of the coverage offered by this Policy, any
-                    unreasonable delay by you in notifying the cyber incident manager could lead to the size of the
-                    claim increasing or to our rights of recovery being restricted. We will not be liable for that
-                    portion of any claim that is due to any unreasonable delay in you notifying the cyber incident
-                    manager of any incident in accordance with this clause. However, if you are prevented from notifying
-                    us by a legal or regulatory obligation then your rights under this Policy will not be affected.
-
-                    If you discover a cyber event you may only incur costs without our prior written consent within the
-                    first 72 hours following the discovery and any third party costs incurred must be with a company
-                    forming part of the approved claims panel providers. All other costs may only be incurred with the
-                    prior written consent of the cyber incident manager (which will not be unreasonably withheld).
+            <div id="doc3-WorkSans" style="display: none;">
+                <p style="font-family: 'Work Sans';">On a day to day basis, it's likely that you're interacting with many people - such as employees, clients, vendors and contractors, to name a few. Any one of them could experience an accident or claim that your business caused them injury or loss, and bring a lawsuit against you. General Liability Insurance is a business insurance policy that is applicable to most contractors and business owners because it protects them. When a business has this type of insurance policy, they're covered when it comes to claims of bodily injury, associated medical costs and damage to property that occurred as a result of your business operations. It also covers legal defense costs, along with settlements and judgements should you be successfully sued. If you are a tenant who causes damage to a property that you rent (like, for example, a fire), that's another situation where under a General Liability Insurance policy, you'd be covered. Lastly, these types of policies cover claims of false or misleading advertising. That could include libel, slander or copyright infringement.
                 </p>
             </div>
-            <form id="doc3-Quiz" action="" style="display: none;">
-                <input type="radio" id="incorrect1" name="doc3-Quiz-Option" value="incorrect d3" required>
-                <label for="incorrect1">Incorrect answer</label><br>
-                <input type="radio" id="correct" name="doc3-Quiz-Option" value="correct d3" required>
-                <label for="correct">Correct Answer</label><br>
-                <input type="radio" id="incorrect2" name="doc3-Quiz-Option" value="incorrect d3" required>
-                <label for="incorrect1">Incorrect answer</label><br>
+            <form id="doc3-Quiz" action="" style="display: none;" class="format--flex-column format--padding-bottom">
+                <p class="h1--bold text--center-align">Does a General Liability Insurance policy cover claims of false or misleading advertising?</p>
+                <div>
+                    <input type="radio" id="correct d3" name="doc3-Quiz-Option" value="correct d3" required>
+                    <label class="body--medium-regular" for="correct d3">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="incorrect1 d3" name="doc3-Quiz-Option" value="incorrect1 d3" required>
+                    <label class="body--medium-regular" for="incorrect1 d3">No</label>
+                </div>
+                <div><input type="radio" id="unknown d3" name="doc3-Quiz-Option" value="unknown d3" required>
+                    <label class="body--medium-regular" for="unknown d3">I don't know</label>
+                </div>
             </form>
 
 
-            <div id="lit1-Lato" style="display: none; flex-direction: column;">
+            <div id="lit1-Lato" style="display: none;">
                 <p style="font-family: 'Lato';">But it was the cooking that occurred in her friends' homes that
                     fascinated Lillian — the aromas that started calling to her just when she had to go home in the
                     evening. Some smells were sharp, an olfactory clatter of heels across a hardwood floor. Others felt
@@ -104,27 +108,33 @@
                     into stories of their days. Lillian thought it odd that not all mothers seemed to see it — Sarah's
                     mother, for instance, always cooked curry when she was fighting with her teenage daughter, its smell
                     rocketing through the house like a challenge. But Lillian soon realized that many people did not
-                    comprehend the language of smells that to Lillian was as obvi-ous as a billboard.
+                    comprehend the language of smells that to Lillian was as obvious as a billboard.
 
                     Perhaps, Lillian thought, smells were for her what printed words were for others, something alive
                     that grew and changed. Not just the smell of rosemary in the garden, but the scent on her hands
                     after she had picked some for Elizabeth's mother, the aroma mingling with the heavy smell of chicken
                     fat and garlic in the oven, the after-scent on the couch cushions the next day. The way, ever after,
                     Elizabeth was always part of rosemary for Lillian, how Elizabeth's round face had crinkled up into
-                    laughter when Lillian had pushed the small, spiky branch near her nose
+                    laughter when Lillian had pushed the small, spiky branch near her nose.
                 </p>
             </div>
-            <form id="lit1-Quiz" action="" style="display: none;">
-                <input type="radio" id="incorrect1" name="lit1-Quiz-Option" value="incorrect l1" required>
-                <label for="incorrect1">Incorrect answer</label><br>
-                <input type="radio" id="correct" name="lit1-Quiz-Option" value="correct l1" required>
-                <label for="correct">Correct Answer</label><br>
-                <input type="radio" id="incorrect2" name="lit1-Quiz-Option" value="incorrect l1" required>
-                <label for="incorrect1">Incorrect answer</label><br>
+            <form id="lit1-Quiz" action="" style="display: none;" class="format--flex-column format--padding-bottom">
+                <p class="h1--bold text--center-align">Which herb does Lillian associate with Elizabeth?</p>
+                <div>
+                    <input type="radio" id="incorrect1 l1" name="lit1-Quiz-Option" value="incorrect1 l1" required>
+                    <label class="body--medium-regular" for="incorrect1 l1">Thyme</label>
+                </div>
+                <div>
+                    <input type="radio" id="correct l1" name="lit1-Quiz-Option" value="correct l1" required>
+                    <label class="body--medium-regular" for="correct l1">Rosemary</label>
+                </div>
+                <div><input type="radio" id="unknown l1" name="lit1-Quiz-Option" value="unknown l1" required>
+                    <label class="body--medium-regular" for="unknown l1">I don't know</label>
+                </div>
             </form>
 
 
-            <div id="lit2-OpenSans" style="display: none; flex-direction: column;">
+            <div id="lit2-OpenSans" style="display: none;">
                 <p style="font-family: 'Open Sans';">Encouraged, he walked westward, till he struck a deer trail which
                     he then began to follow. The trail meandered roughly along the same course as the river, now and
                     then coming in sight of it, through a gap in the trees. There were vast clearings with corn just
@@ -140,18 +150,25 @@
                     knife she was up and away, the white tail flashing.
                 </p>
             </div>
-            <form id="lit2-Quiz" action="" style="display: none;">
-                <input type="radio" id="incorrect1" name="lit2-Quiz-Option" value="incorrect l2" required>
-                <label for="incorrect1">Incorrect answer</label><br>
-                <input type="radio" id="correct" name="lit2-Quiz-Option" value="correct l2" required>
-                <label for="correct">Correct Answer</label><br>
-                <input type="radio" id="incorrect2" name="lit2-Quiz-Option" value="incorrect l2" required>
-                <label for="incorrect1">Incorrect answer</label><br>
+            <form id="lit2-Quiz" action="" style="display: none;" class="format--flex-column format--padding-bottom">
+                <p class="h1--bold text--center-align">What did the narrator see growing in the vast clearings?</p>
+                <div>
+                    <input type="radio" id="correct l2" name="lit2-Quiz-Option" value="correct l2" required>
+                    <label class="body--medium-regular" for="correct l2">Corn</label>
+                </div>
+                <div>
+                    <input type="radio" id="incorrect1 l2" name="lit2-Quiz-Option" value="incorrect1 l2" required>
+                    <label class="body--medium-regular" for="incorrect1 l2">Wheat</label>
+                </div>
+                <div><input type="radio" id="unknown l2" name="lit2-Quiz-Option" value="unknown l2" required>
+                    <label class="body--medium-regular" for="unknown l2">I don't know</label>
+                </div>
             </form>
 
 
-            <div id="lit3-WorkSans" style="display: none; flex-direction: column;">
-                <p style="font-family: 'Work Sans';">At home in Ballyroan, in the single-story cottage that stood beside the
+            <div id="lit3-WorkSans" style="display: none;">
+                <p style="font-family: 'Work Sans';">At home in Ballyroan, in the single-story cottage that stood beside
+                    the
                     sea, in the bed she shared with her older sister, eight-year-old Greta Cahill woke before dawn to a
                     sound that was not the ocean, was not the animals bawling into the wind, was not a slammed gate, a
                     clanging cowbell, or the rain beating on the gable. The sound was different, it was a first, and to
@@ -168,13 +185,19 @@
                     seeing how your sister does it?"
                 </p>
             </div>
-            <form id="lit3-Quiz" action="" style="display: none;">
-                <input type="radio" id="incorrect1" name="lit3-Quiz-Option" value="incorrect l3" required>
-                <label for="incorrect1">Incorrect answer</label><br>
-                <input type="radio" id="correct" name="lit3-Quiz-Option" value="correct l3" required>
-                <label for="correct">Correct Answer</label><br>
-                <input type="radio" id="incorrect2" name="lit3-Quiz-Option" value="incorrect l3" required>
-                <label for="incorrect1">Incorrect answer</label><br>
+            <form id="lit3-Quiz" action="" style="display: none;" class="format--flex-column format--padding-bottom">
+                <p class="h1--bold text--center-align">What is the name of Greta's sister?</p>
+                <div>
+                    <input type="radio" id="incorrect1 l3" name="lit3-Quiz-Option" value="incorrect1 l3" required>
+                    <label class="body--medium-regular" for="incorrect1 l3">Alice</label>
+                </div>
+                <div>
+                    <input type="radio" id="correct l3" name="lit3-Quiz-Option" value="correct l3" required>
+                    <label class="body--medium-regular" for="correct l3">Johanna</label>
+                </div>
+                <div><input type="radio" id="unknown l3" name="lit3-Quiz-Option" value="unknown l3" required>
+                    <label class="body--medium-regular" for="unknown l3">I don't know</label>
+                </div>
             </form>
 
 
@@ -190,8 +213,7 @@
             <input name="Doc 2 - Open Sans" type="text" id="doc2-OpenSans-Label" style="display:none;" required>
             <input name="Doc 3 - Work Sans" type="text" id="doc3-WorkSans-Label" style="display:none;" required>
 
-            <input name="Lit 1 - Lato" type="text" id="lit1-Lato-Label" style="display:none;"
-                required>
+            <input name="Lit 1 - Lato" type="text" id="lit1-Lato-Label" style="display:none;" required>
             <input name="Lit 2 - Open Sans" type="text" id="lit2-OpenSans-Label" style="display:none;" required>
             <input name="Lit 3 - Work Sans" type="text" id="lit3-WorkSans-Label" style="display:none;" required>
 
@@ -199,8 +221,7 @@
             <input name="QUIZ Doc 2 - Open Sans" type="text" id="doc2-Quiz-Label" style="display:none;" required>
             <input name="QUIZ Doc 3 - Work Sans" type="text" id="doc3-Quiz-Label" style="display:none;" required>
 
-            <input name="QUIZ Lit 1 - Lato" type="text" id="lit1-Quiz-Label" style="display:none;"
-                required>
+            <input name="QUIZ Lit 1 - Lato" type="text" id="lit1-Quiz-Label" style="display:none;" required>
             <input name="QUIZ Lit 2 - Open Sans" type="text" id="lit2-Quiz-Label" style="display:none;" required>
             <input name="QUIZ Lit 3 - Work Sans" type="text" id="lit3-Quiz-Label" style="display:none;" required>
 

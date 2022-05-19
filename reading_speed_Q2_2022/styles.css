@@ -46,16 +46,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
     gap: 24px;
 }
 
-.text--center-align {
-    text-align: center;
+.format--padding-bottom {
+    padding-bottom: 24px;
 }
 
 .format--remove-margin {
     margin: 0;
+}
+
+.format--width-60percent {
+    width: 60%;
+}
+
+
+.text--center-align {
+    text-align: center;
 }
 
 
