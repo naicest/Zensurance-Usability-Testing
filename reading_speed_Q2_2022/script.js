@@ -14,8 +14,9 @@ window.onload = function () {
   var countParagraphs = 0;
   var seconds = 00;
   var tens = 00;
-  var appendTens = document.getElementById("tens")
-  var appendSeconds = document.getElementById("seconds")
+  var appendTens = document.getElementById("tens");
+  var appendSeconds = document.getElementById("seconds");
+  var buttonNext = document.getElementById('next-button');
   var buttonStart = document.getElementById('button-start');
   var buttonStop = document.getElementById('button-stop');
   var buttonQuizSubmit = document.getElementById('button-quiz-submit');
@@ -23,6 +24,29 @@ window.onload = function () {
   var firstMsgRead = false;
 
 
+  buttonNext.onclick = function () {
+    if (firstMsgRead === false) {
+      var getSelectedValue = document.getElementById("user-name").value; //get user's name
+    
+      if (getSelectedValue.length >= 1) {
+        console.log(getSelectedValue);
+        document.getElementById("user-name-Label").value = getSelectedValue; //add user's name to spreadsheet form 
+        
+        
+        var nameForm = document.getElementById("name-form"); //hide name form
+        nameForm.style.display = "none";
+
+        var msg = document.getElementById("start-msg-1"); //show start message 1
+        msg.style.display = "block";
+
+        var button = document.getElementById("button-start"); //show start button
+        button.style.display = "block";
+      }
+      else {
+        alert("Please enter your name");
+      }
+    }
+  }
 
   buttonStart.onclick = function () {
     if (countParagraphs < (Object.keys(paragraphNumbers).length)) {

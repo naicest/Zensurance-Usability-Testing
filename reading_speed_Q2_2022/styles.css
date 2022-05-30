@@ -105,3 +105,24 @@
 .button:focus {
     background-color: var(--green-700);
 }
+
+
+/* Inputs */
+input[type="text"] {
+    color: var(--grey-700);
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+input[type="text"]:focus {
+    outline: 1px solid var(--green-600);
+}
+
+.text-input {
+  height: 58px;
+  width: 100%;
+  padding: 24px 16px 24px 16px;
+  background-color: var(--grey-100);
+  border-radius: 4px;
+  border: 1px solid var(--grey-400);
+  box-shadow: 0px 3px 6px #b8c2cc33;
+}

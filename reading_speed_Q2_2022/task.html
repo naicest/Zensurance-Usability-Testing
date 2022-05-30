@@ -20,11 +20,18 @@
 
         <div class="format--flex-column format--width-60percent">
             <div class="format--flex-column format--width-60percent">
-                <h1 class="h1--bold text--center-align" id="start-msg-1">When you are ready to begin reading the first
-                    passage, press start. </h1>
+                <div class="format--flex-column" id="name-form">
+                    <label class="body--medium-regular" for="user-name">Enter your full name:</label>
+                    <input class="text-input" type="text" id="user-name" name="user-name">
+
+                    <button class="button" id="next-button">Next</button>
+                </div>
+                
+                <h1 class="h1--bold text--center-align" id="start-msg-1" style="display: none;">When you are ready to begin reading the first passage, press start. </h1>
+                    
                 <h1 class="h1--bold text--center-align" id="start-msg-2" style="display: none;">When you are ready to
                     begin reading the next passage, press start. </h1>
-                <button class="button" id="button-start">Start</button>
+                <button class="button" id="button-start" style="display: none">Start</button>
             </div>
             <div id="doc1-Lato" style="display: none;">
                 The Insurer or its duly appointed representative shall be permitted but not obligated to inspect
@@ -223,6 +230,8 @@
 
         <form id="timesForm" method="POST" target="dummy-frame"
             action="https://script.google.com/macros/s/AKfycbzH-YVRKRAuNMo-SF-Mx0IS_njlg-dDyHc0hwhwOc-7mQmoFdLXCB2EdxWTOoULNbyWxg/exec">
+            <input name="Name" type="text" id="user-name-Label" style="display:none;" required>
+
             <input name="Doc 1 - Lato" type="text" id="doc1-Lato-Label" style="display:none;" required>
             <input name="Doc 2 - Open Sans" type="text" id="doc2-OpenSans-Label" style="display:none;" required>
             <input name="Doc 3 - Work Sans" type="text" id="doc3-WorkSans-Label" style="display:none;" required>
